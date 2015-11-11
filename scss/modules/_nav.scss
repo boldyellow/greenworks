@@ -1,115 +1,94 @@
-/*!  v0.0.1 | http://datchung.com/css-responsive-menu/ | Licensed MIT | Built Sun Jan 25 2015 00:20:11 */
-
-
-
 header {
-	background-color: transparent;
+	  background: #eee;
+	  padding: 40px 0;
 }
 
-nav {
-	padding: 1rem;
+.logo {
+	  background-color: #777;
+	  font-size: 30px;
+	  height: 80px;
+	  width: 150px;
+	  display: inline-block;
 }
 
-nav .button {
-	margin-bottom: 0;
+nav > ul {
+  	float: right;
+  	margin-bottom: 0;
+  	list-style: none;
 }
 
-nav ul.navigation-list {
-	background-color: #eee;
-	border-radius: 4px;
-	margin: 0;
-}
-
-nav ul.navigation-list li {
-	padding-right: 0;
-	margin-bottom: 10px;
-}
-
-nav ul.navigation-list li:last-child {
-	margin-bottom: 0;
-}
-
-nav ul.navigation-list li a {
-	text-decoration: none;
+nav > ul > li {
+  	text-align: left;
+	  line-height: 1;
+	  margin-left: 30px;
 }
 
 
+nav ul li:hover {
+	  cursor: pointer;
+	  position: relative;
+}
 
-@media ($bp-larger-than-phablet) {
-	
-	header {
-	    background-color: #eee;
+nav > ul > li {
+  	float: left;
+}
+nav a {
+	  color: #888;
+}
+
+nav > [type="checkbox"], label {
+	  display: none;
+}
+
+@media screen and (max-width: 768px) {
+	nav ul {
+		  display: none;
 	}
 
-	nav {
-		background-color: #eee;
-		padding: 1.5rem 0;
+	label {
+  		display: block;
+  		background: #222;
+		  width: 40px;
+  		height: 40px;
+  		cursor: pointer;
+		  position: absolute;
+		  right: 0;
+  		top: 0px;
 	}
-
-	.nav ul.navigation-list {
-		padding-left: 0;
-		padding-right: 0;
-		margin: 0;
-	}
-
-	nav ul.navigation-list li {
-		padding-right: 15px;
-	}
-	
-}
-
-
-
-/* core styles for responsive menu 
------------------------------------------------------------------------- */
-
-nav .expand-control {
-	display: inline-block;
-	cursor: pointer;
-}
-
-nav input[type="checkbox"] {
-    display: none;
-}
-
-nav input[type="checkbox"].expand-control:checked + ul.navigation-list {
-    display: block;
-}
-
-nav ul.navigation-list {
-	display: none;
-}
-
-nav ul.navigation-list li {
-	display: block;
-}
-
-
-
-@media ($bp-larger-than-phablet) {
-		
-	nav label.expand-control {
-		display: none;
-	}
-	
-	nav input[type="checkbox"].expand-control {
-		display: none;
-	}
-	
-	nav ul.navigation-list {
-		display: block;
-		list-style: none;
-	}
-	
-	nav ul.navigation-list li {
-		display: inline;
-	}
-
-	nav ul.navigation-list li:nth-child(n+5) {
-		font-weight: bold;
-		float: right;
-	}
-	
-	
   
+label:after{
+  content:'';
+  display: block;
+  width: 30px;
+  height: 5px;
+  background: #777;
+  margin: 7px 5px;
+  box-shadow: 0px 10px 0px #777, 0px 20px 0px #777
+}
+
+	[type="checkbox"]:checked ~ ul {
+  		display: block;
+  		z-index: 9999;
+  		position: absolute;
+		  right: 0;
+		  left: 0;
+	}
+
+	nav a {
+		  color: #777;
+	}
+
+	nav ul li {
+		  display: block;
+  		float: none;
+  		width: 100%;
+  		text-align: left;
+  		background: #222;
+		  text-indent: 20px;
+	}
+
+	nav > ul > li {
+  		margin-left: 0px;
+	}
+
 }
