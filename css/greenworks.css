@@ -646,6 +646,9 @@ form {
   margin-bottom: 2.5rem; }
 
 /*!  v0.0.1 | http://datchung.com/css-responsive-menu/ | Licensed MIT | Built Sun Jan 25 2015 00:20:11 */
+.menu-filler {
+  background-color: #eeeeee; }
+
 .css-responsive-menu {
   background-color: #eeeeee;
   padding: 10px; }
@@ -688,9 +691,7 @@ form {
 
   .menu-filler {
     background-color: transparent; } }
-/*
-Core styles necessary for responsive menu.
-*/
+/* core styles necessary for responsive menu */
 .css-responsive-menu .expand-control {
   display: none; }
 
