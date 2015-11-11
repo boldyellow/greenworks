@@ -2,3 +2,4 @@ config.codekit
 .DS_Store
 .sass-cache
 .sass-cache/*
+*.css.map
