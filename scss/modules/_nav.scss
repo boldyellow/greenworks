@@ -33,7 +33,7 @@ nav ul li {
 	width: 100%;
 	text-align: left;
 	margin: 0;
-	text-indent: 20px;
+	text-indent: 1.25rem;
 	padding: 15px 0 0 0;
 }
 
@@ -47,22 +47,32 @@ nav ul li:last-child a {
 	display: inline-block;
 	color: #bbb;
 	background-color: #666;
-	padding: 5px 8px;
+	padding: 0.3125rem 1.2rem;
 	border-radius: 6px;	
-	font-weight: bold;	
+	font-weight: $font-bold;	
 	text-indent: 0;
 }
 
 nav ul li:last-child a:last-child {
-	margin-left: 8px;
-	padding: 5px 11px;
+	margin-left: 2rem;
+}
+
+@media (#{$bp-larger-than-tablet}) {
+
+	nav ul li:last-child a {
+		padding: 0.3125rem 0.5rem;
+	}
+
+	nav ul li:last-child a:last-child {
+		margin-left: 1rem;
+	}
+	
 }
 
 nav ul li:last-child a.active {
 	background-color: #f00;
 	color: #fff;
 }
-
 	
 label {
 	display: block;
@@ -166,7 +176,7 @@ nav > [type="checkbox"] {
 }
 
 
-@media (#{$bp-larger-than-tablethd}) {
+@media (#{$bp-larger-than-tablet-hd}) {
 	
 	nav ul {
 		font-size: 2rem;
