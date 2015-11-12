@@ -914,131 +914,36 @@ form {
   margin-bottom: 2.5rem;
 }
 
-/*
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\000031}}
 header {
-	  background: #eee;
-	  padding: 40px 0;
-}
-
-.logo {
-	  background-color: #777;
-	  font-size: 30px;
-	  height: 80px;
-	  width: 150px;
-	  display: inline-block;
-}
-
-nav > ul {
-  	float: right;
-  	margin-bottom: 0;
-  	list-style: none;
-}
-
-nav > ul > li {
-  	text-align: left;
-	  line-height: 1;
-	  margin-left: 30px;
-}
-
-
-nav ul li:hover {
-	  cursor: pointer;
-	  position: relative;
-}
-
-nav > ul > li {
-  	float: left;
-}
-nav a {
-	  color: #888;
-}
-
-nav > [type="checkbox"], label {
-	  display: none;
-}
-
-@media screen and (max-width: 768px) {
-	nav ul {
-		  display: none;
-	}
-
-	label {
-  		display: block;
-  		background: #222;
-		  width: 40px;
-  		height: 40px;
-  		cursor: pointer;
-		  position: absolute;
-		  right: 0;
-  		top: 0px;
-	}
-  
-	label:after{
-	  content:'';
-	  display: block;
-	  width: 30px;
-	  height: 5px;
-	  background: #777;
-	  margin: 7px 5px;
-	  box-shadow: 0px 10px 0px #777, 0px 20px 0px #777
-	}
-
-	[type="checkbox"]:checked ~ ul {
-  		display: block;
-  		z-index: 9999;
-  		position: absolute;
-		  right: 0;
-		  left: 0;
-	}
-
-	nav a {
-		  color: #777;
-	}
-
-	nav ul li {
-		  display: block;
-  		float: none;
-  		width: 100%;
-  		text-align: left;
-  		background: #222;
-		  text-indent: 20px;
-	}
-
-	nav > ul > li {
-  		margin-left: 0px;
-	}
-
-}
-*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003102}}
-header {
-  padding: 40px 0 0 0;
   position: relative;
+  height: 85px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\000036}}
 .logo {
   background-color: #777;
   font-size: 30px;
   height: 80px;
   width: 150px;
+  margin-top: 10px;
   display: inline-block;
+  float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003116}}
-nav {
-  position: relative;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003120}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\0000319}}
 nav ul {
   display: none;
   padding-bottom: 15px;
   background-color: #eee;
   border-radius: 9px;
+  right: 20px;
+  left: 20px;
+  top: 85px;
+  font-size: 2rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003127}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\0000330}}
 nav ul li {
   display: block;
   float: none;
@@ -1049,14 +954,37 @@ nav ul li {
   padding: 15px 0 0 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003137}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\0000340}}
 nav a {
   color: #000;
   display: block;
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003143}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\0000346}}
+nav ul li:last-child a {
+  display: inline-block;
+  color: #bbb;
+  background-color: #666;
+  padding: 5px 8px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-indent: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\0000356}}
+nav ul li:last-child a:last-child {
+  margin-left: 8px;
+  padding: 5px 11px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\0000361}}
+nav ul li:last-child a.active {
+  background-color: #f00;
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\0000367}}
 label {
   display: block;
   background: #eee;
@@ -1065,12 +993,10 @@ label {
   cursor: pointer;
   position: absolute;
   right: 20px;
-  top: 0;
-  bottom: 5px;
-  margin: auto;
+  top: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003156}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\0000378}}
 label:after {
   content: '';
   display: block;
@@ -1082,76 +1008,91 @@ label:after {
 }
 
 @media (min-width: 400px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003169}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\0000391}}
   label {
     margin-left: 20px;
     right: 0;
   }
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003177}}
-nav > [type="checkbox"] {
-  display: none;
-}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003181}}
-[type="checkbox"]:checked ~ ul {
-  display: block;
-  z-index: 9999;
-  position: absolute;
-  right: 20px;
-  left: 20px;
-}
-
-@media (min-width: 400px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003192}}
-  [type="checkbox"]:checked ~ ul {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\0000396}}
+  nav ul {
     right: 0;
     left: 0;
   }
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003104}}
+nav > [type="checkbox"] {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003108}}
+[type="checkbox"]:checked ~ ul {
+  display: block;
+  z-index: 9999;
+  position: absolute;
+}
+
 @media (min-width: 750px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003204}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003120}}
   header {
     background: #eee;
-    padding: 40px 0;
+    padding: 20px 0;
+    height: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003209}}
-  nav > ul {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003126}}
+  .logo {
+    margin-top: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003130}}
+  nav ul {
     display: inline-block;
     float: right;
-    margin-bottom: 0;
+    margin: 25px 0 0 0;
     list-style: none;
     background-color: transparent;
+    font-size: 1.7rem;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003217}}
-  nav > ul > li {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003139}}
+  nav ul li {
     display: inline;
     text-align: left;
     line-height: 1;
-    margin-left: 30px;
+    margin-left: 15px;
     background-color: transparent;
     text-indent: 0;
     width: auto;
     padding: 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003229}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003152}}
   nav ul li:hover {
     cursor: pointer;
     position: relative;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003234}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003157}}
   nav a {
     display: inline;
     color: #888;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003239}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003162}}
   nav > [type="checkbox"], label {
     display: none;
+  }
+}
+@media (min-width: 900px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003171}}
+  nav ul {
+    font-size: 2rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_nav\.scss}line{font-family:\00003175}}
+  nav ul li {
+    margin-left: 25px;
   }
 }
 
