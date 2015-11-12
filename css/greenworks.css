@@ -869,24 +869,6 @@ li {
   margin-bottom: 1rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_code\.scss}line{font-family:\000034}}
-code {
-  padding: .2rem .5rem;
-  margin: 0 .2rem;
-  font-size: 90%;
-  white-space: nowrap;
-  background: #f1f1f1;
-  border: 1px solid #e1e1e1;
-  border-radius: 4px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_code\.scss}line{font-family:\0000314}}
-pre > code {
-  display: block;
-  padding: 1rem 1.5rem;
-  white-space: pre;
-}
-
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_spacing\.scss}line{font-family:\000034}}
 button,
 .button {
@@ -924,7 +906,7 @@ header {
 .logo {
   background-color: #777;
   font-size: 30px;
-  height: 80px;
+  height: 75px;
   width: 150px;
   margin-top: 10px;
   display: inline-block;
@@ -1094,6 +1076,23 @@ nav > [type="checkbox"] {
   nav ul li {
     margin-left: 25px;
   }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_flex\.scss}line{font-family:\000031}}
+.home-link {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  min-height: 15em;
+  justify-content: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/boldyellow\/Development\/greenworks\/scss\/modules\/_flex\.scss}line{font-family:\0000312}}
+.home-link p {
+  margin: 0 2rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=greenworks.css.map */
