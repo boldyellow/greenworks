@@ -51,6 +51,9 @@ nav ul li:last-child a {
 	border-radius: 6px;	
 	font-weight: $font-bold;	
 	text-indent: 0;
+	&:hover {
+		background-color: #ccc;
+    }
 }
 
 nav ul li:last-child a:last-child {
@@ -72,6 +75,9 @@ nav ul li:last-child a:last-child {
 nav ul li:last-child a.active {
 	background-color: #f00;
 	color: #fff;
+	&:hover {
+		background-color: #fcc;
+    }
 }
 	
 label {

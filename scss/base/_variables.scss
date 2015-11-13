@@ -5,7 +5,7 @@
 $bp-larger-than-mobile    : "min-width: 400px";
 $bp-larger-than-phablet   : "min-width: 550px";
 $bp-larger-than-tablet    : "min-width: 750px";
-$bp-larger-than-tablet-hd  : "min-width: 900px";
+$bp-larger-than-tablet-hd : "min-width: 900px";
 $bp-larger-than-desktop   : "min-width: 1000px";
 $bp-larger-than-desktophd : "min-width: 1200px";
 
@@ -14,8 +14,9 @@ $light-grey: #e1e1e1;
 $dark-grey: #333;
 $primary-color: #33c3f0;
 $secondary-color: lighten($dark-grey, 13.5%);
+$brand-color: #0fb500;
 $border-color: #bbb;
-$link-color: #1eaedb;
+$link-color: #0fb500;
 $font-color: #222;
 $font-bold: 700;
 

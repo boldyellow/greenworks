@@ -1,0 +1,120 @@
+.service-directory {
+	background-color: #fc0;
+	padding: 2rem 0;
+}
+
+.service-directory h1 {
+	color: $brand-color;
+	font-weight: $font-bold;
+	padding: 0 0 2rem 0;
+	margin: 0;
+}
+
+@media (#{$bp-larger-than-phablet}) {
+
+	.service-directory {
+		padding: 3rem 0;
+	}
+
+	.service-directory h1 {
+		padding: 0 0 3rem 0;
+	}
+	
+}
+
+@media (#{$bp-larger-than-tablet}) {
+
+	.service-directory {
+		padding: 4rem 0;
+	}
+
+	.service-directory h1 {
+		padding: 0 0 4rem 0;
+	}
+	
+}
+
+.service-link {
+	@include flexbox();
+	align-items: center;
+	min-height: 15rem;
+	justify-content: center;
+	color: #fff;
+	text-decoration: none;
+}
+
+@media (#{$bp-larger-than-phablet}) {
+	.service-link {
+		min-height: 14rem;
+	}
+}
+
+@media (#{$bp-larger-than-tablet}) {
+	.service-link {
+		min-height: 16rem;
+	}
+}
+
+@media (#{$bp-larger-than-tablet-hd}) {
+	.service-link {
+		min-height: 24rem;
+	}
+}
+
+.service-link.staffing {
+	background-color: #444;
+	&:hover {
+		color: #fcc;
+		background-color:blue;
+    }
+}
+
+.service-link.construction {
+	background-color: #ddd;
+	&:hover {
+		color: #fcc;
+		background-color:aqua;
+    }
+}
+
+.service-link.cleaning {
+	background-color: #345;
+	&:hover {
+		color: #fcc;
+		background-color:orange;
+    }
+}
+
+.service-link h3 {
+	margin: 0 1rem;
+	text-align: center;
+	font-size: 3rem; 
+}
+
+@media (#{$bp-larger-than-phablet}) {
+		
+	.service-link h3 { 
+		font-size: 2.25rem; 
+		letter-spacing: -0.05rem;
+	}
+}
+
+@media (#{$bp-larger-than-tablet}) {
+		
+	.service-link h3 { 
+		font-size: 2.5rem; 
+	}
+}
+
+@media (#{$bp-larger-than-tablet-hd}) {
+		
+	.service-link h3 { 
+		font-size: 3rem; 
+	}
+}
+
+.overview {
+	padding: 3rem 0 5rem 0;
+	text-align: center;
+	min-height: 15rem;
+}

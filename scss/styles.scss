@@ -10,20 +10,25 @@
 
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700);
 
-/* Base files. */
+/* base files. */
 @import "base/normalize";
 @import "base/variables";
 @import "base/functions";
 @import "base/base-styles";
 @import "base/utils";
 @import "base/typography";
+@import "base/grid";
 
-/* Modules */
-@import "modules/grid";
+/* modules */
 @import "modules/buttons";
 @import "modules/forms";
 @import "modules/lists";
 @import "modules/spacing";
-@import "modules/nav";
-@import "modules/home";
-@import "modules/footer";
+
+/* custom */
+@import "mixins/sitemix";
+
+/* custom */
+@import "custom/nav";
+@import "custom/home";
+@import "custom/footer";
