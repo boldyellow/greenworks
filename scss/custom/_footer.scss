@@ -1,0 +1,16 @@
+footer {
+	border-top: 0.5rem solid #eee;
+	padding: 3rem 0;
+	text-align: center;
+}
+
+footer h5 {
+	font-weight: $font-bold; 
+	color: $brand-color;
+}
+
+.social {
+	 display: inline-block;
+	 height: 40px;
+	 width: 40px;
+}

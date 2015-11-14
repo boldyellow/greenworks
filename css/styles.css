@@ -248,24 +248,24 @@ h2 {
   letter-spacing: -.2rem; }
 
 h3 {
-  font-size: 2.0rem;
+  font-size: 2.4rem;
   line-height: 1.3;
   letter-spacing: -.1rem; }
 
 h4 {
-  font-size: 1.4rem;
+  font-size: 2.0rem;
   line-height: 1.35;
   letter-spacing: -.08rem; }
 
 h5 {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   letter-spacing: -.05rem; }
 
 h6 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.6;
-  letter-spacing: 0; }
+  letter-spacing: -.01rem; }
 
 @media (min-width: 550px) {
   h1 {
@@ -284,7 +284,7 @@ h6 {
     font-size: 1.9rem; }
 
   h6 {
-    font-size: 1.2rem; } }
+    font-size: 1.5rem; } }
 @media (min-width: 750px) {
   h1 {
     font-size: 5.0rem; }
@@ -302,7 +302,7 @@ h6 {
     font-size: 2.4rem; }
 
   h6 {
-    font-size: 1.5rem; } }
+    font-size: 2.0rem; } }
 p {
   margin-top: 0; }
 
@@ -793,29 +793,29 @@ nav > [type="checkbox"] {
 
   nav ul li {
     margin-left: 25px; } }
-.service-directory {
+.directory {
   background-color: #fc0;
   padding: 2rem 0; }
 
-.service-directory h1 {
+.directory h1 {
   color: #0fb500;
   font-weight: 700;
   padding: 0 0 2rem 0;
   margin: 0; }
 
 @media (min-width: 550px) {
-  .service-directory {
+  .directory {
     padding: 3rem 0; }
 
-  .service-directory h1 {
+  .directory h1 {
     padding: 0 0 3rem 0; } }
 @media (min-width: 750px) {
-  .service-directory {
+  .directory {
     padding: 4rem 0; }
 
-  .service-directory h1 {
+  .directory h1 {
     padding: 0 0 4rem 0; } }
-.service-link {
+.directory-link {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -828,48 +828,62 @@ nav > [type="checkbox"] {
   text-decoration: none; }
 
 @media (min-width: 550px) {
-  .service-link {
+  .directory-link {
     min-height: 14rem; } }
 @media (min-width: 750px) {
-  .service-link {
+  .directory-link {
     min-height: 16rem; } }
 @media (min-width: 900px) {
-  .service-link {
+  .directory-link {
     min-height: 24rem; } }
-.service-link.staffing {
+.directory-link.staffing {
   background-color: #444; }
-  .service-link.staffing:hover {
+  .directory-link.staffing:hover {
     color: #fcc;
     background-color: blue; }
 
-.service-link.construction {
+.directory-link.construction {
   background-color: #ddd; }
-  .service-link.construction:hover {
+  .directory-link.construction:hover {
     color: #fcc;
     background-color: aqua; }
 
-.service-link.cleaning {
+.directory-link.cleaning {
   background-color: #345; }
-  .service-link.cleaning:hover {
+  .directory-link.cleaning:hover {
     color: #fcc;
     background-color: orange; }
 
-.service-link h3 {
+.directory-link h3 {
   margin: 0 1rem;
   text-align: center;
   font-size: 3rem; }
 
 @media (min-width: 550px) {
-  .service-link h3 {
+  .directory-link h3 {
     font-size: 2.25rem;
     letter-spacing: -0.05rem; } }
 @media (min-width: 750px) {
-  .service-link h3 {
+  .directory-link h3 {
     font-size: 2.5rem; } }
 @media (min-width: 900px) {
-  .service-link h3 {
+  .directory-link h3 {
     font-size: 3rem; } }
 .overview {
   padding: 3rem 0 5rem 0;
   text-align: center;
   min-height: 15rem; }
+
+footer {
+  border-top: 0.5rem solid #eee;
+  padding: 3rem 0;
+  text-align: center; }
+
+footer h5 {
+  font-weight: 700;
+  color: #0fb500; }
+
+.social {
+  display: inline-block;
+  height: 40px;
+  width: 40px; }
