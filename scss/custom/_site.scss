@@ -1,0 +1,24 @@
+section {
+	padding: 3rem 0;
+}
+
+
+@media (#{$bp-larger-than-tablet}) {
+
+	section {
+		padding: 4rem 0;
+	}
+
+}
+
+section h1 {
+	color: $brand-color;
+	font-weight: $font-bold;
+	padding: 0 0 2rem 0;
+	margin: 0;
+}
+
+section h6 {
+	font-weight: $font-bold;
+	color: $dark-grey;
+}

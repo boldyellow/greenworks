@@ -7,11 +7,11 @@ $bp-larger-than-phablet   : "min-width: 550px";
 $bp-larger-than-tablet    : "min-width: 750px";
 $bp-larger-than-tablet-hd : "min-width: 900px";
 $bp-larger-than-desktop   : "min-width: 1000px";
-$bp-larger-than-desktophd : "min-width: 1200px";
+$bp-larger-than-desktop-hd: "min-width: 1200px";
 
 // Colors
 $light-grey: #e1e1e1;
-$dark-grey: #333;
+$dark-grey: #777;
 $primary-color: #33c3f0;
 $secondary-color: lighten($dark-grey, 13.5%);
 $brand-color: #0fb500;
