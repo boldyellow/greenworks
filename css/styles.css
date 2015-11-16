@@ -698,8 +698,13 @@ section h6 {
 header {
   position: relative; }
 
+@media (min-width: 750px) {
+  header {
+    background: #eee;
+    padding: 20px 0;
+    height: auto; } }
 .xyz {
-  width: 85%;
+  width: 100%;
   position: relative;
   display: block;
   height: 6rem;
@@ -710,6 +715,22 @@ header {
     height: auto; } }
 @media (min-width: 900px) {
   .xyz {
+    width: 100%;
+    height: 7.5rem;
+    padding: 0;
+    margin: 0; } }
+.abcd {
+  width: 100%;
+  position: relative;
+  display: block;
+  height: 6rem;
+  margin: 0 auto; }
+
+@media (min-width: 750px) {
+  .abcd {
+    height: auto; } }
+@media (min-width: 900px) {
+  .abcd {
     width: 100%;
     height: 7.5rem;
     padding: 0;
@@ -754,28 +775,63 @@ header {
     margin: 0; } }
 nav ul {
   display: none;
-  padding-bottom: 15px;
+  padding-bottom: 1.5rem;
   background-color: #eee;
-  border-radius: 9px;
-  right: 20px;
-  left: 20px;
-  top: 85px;
+  right: 0;
+  left: 0;
+  top: 6rem;
   font-size: 2rem; }
 
+@media (min-width: 400px) {
+  nav ul {
+    right: 0;
+    left: 0; } }
+@media (min-width: 750px) {
+  nav ul {
+    display: inline-block;
+    float: right;
+    margin: 2.1rem 0 0 0;
+    list-style: none;
+    background-color: transparent;
+    font-size: 1.7rem; } }
+@media (min-width: 900px) {
+  nav ul {
+    font-size: 2rem; } }
 nav ul li {
   display: block;
   float: none;
-  width: 100%;
+  width: 85%;
   text-align: left;
-  margin: 0;
-  text-indent: 1.25rem;
+  margin: 0 7.5%;
+  text-indent: 0;
   padding: 15px 0 0 0; }
 
+@media (min-width: 750px) {
+  nav ul li {
+    display: inline;
+    text-align: left;
+    line-height: 1;
+    margin-left: 15px;
+    background-color: transparent;
+    text-indent: 0;
+    width: auto;
+    padding: 0; }
+
+  nav ul li:hover {
+    cursor: pointer;
+    position: relative; } }
+@media (min-width: 900px) {
+  nav ul li {
+    margin-left: 0; } }
 nav ul li a {
   color: #000;
   display: block;
   text-decoration: none; }
 
+@media (min-width: 750px) {
+  nav ul li a {
+    display: inline;
+    color: #888; } }
 nav ul li a.active {
   color: #0fb500; }
 
@@ -812,7 +868,7 @@ label {
   height: 40px;
   cursor: pointer;
   position: absolute;
-  right: 20px;
+  left: 7.5%;
   top: 10px; }
 
 label:after {
@@ -826,63 +882,18 @@ label:after {
 
 @media (min-width: 400px) {
   label {
-    margin-left: 20px;
-    right: 0; }
-
-  nav ul {
-    right: 0;
-    left: 0; } }
-nav > [type="checkbox"] {
+    margin-left: 0; } }
+nav [type="checkbox"] {
   display: none; }
 
+@media (min-width: 750px) {
+  nav [type="checkbox"], label {
+    display: none; } }
 [type="checkbox"]:checked ~ ul {
   display: block;
   z-index: 9999;
   position: absolute; }
 
-@media (min-width: 750px) {
-  header {
-    background: #eee;
-    padding: 20px 0;
-    height: auto; }
-
-  .logo {
-    margin-top: 0; }
-
-  nav ul {
-    display: inline-block;
-    float: right;
-    margin: 2.1rem 0 0 0;
-    list-style: none;
-    background-color: transparent;
-    font-size: 1.7rem; }
-
-  nav ul li {
-    display: inline;
-    text-align: left;
-    line-height: 1;
-    margin-left: 15px;
-    background-color: transparent;
-    text-indent: 0;
-    width: auto;
-    padding: 0; }
-
-  nav ul li:hover {
-    cursor: pointer;
-    position: relative; }
-
-  nav ul li a {
-    display: inline;
-    color: #888; }
-
-  nav > [type="checkbox"], label {
-    display: none; } }
-@media (min-width: 900px) {
-  nav ul {
-    font-size: 2rem; }
-
-  nav ul li {
-    margin-left: 25px; } }
 .directory {
   background-color: #333;
   text-align: center; }
