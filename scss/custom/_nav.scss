@@ -49,6 +49,8 @@ header {
 	
 	.abcd {
 		height: auto;
+		width: 85%;
+
 	}
 	
 }
@@ -104,7 +106,6 @@ header {
 
 .logo {
     background-color: #808080;
-    font-size: 30px;
     height: 7.5rem;
     width: 15rem;
     position: relative;
@@ -167,7 +168,7 @@ nav ul li {
 	float: none;
 	width: 85%;
 	text-align: left;
-	margin: 0 7.5%;
+	margin: 0 0 0 7.5%;
 	text-indent: 0;
 	padding: 15px 0 0 0;
 }
@@ -178,7 +179,7 @@ nav ul li {
 		display: inline;
 	  	text-align: left;
 		line-height: 1;
-		margin-left: 15px;
+		margin: 0 0 0 15px;
 		background-color: transparent;
 		text-indent: 0;
 		width: auto;
@@ -189,16 +190,7 @@ nav ul li {
 		  cursor: pointer;
 		  position: relative;
 	}
-}
-
-@media (#{$bp-larger-than-tablet-hd}) {
-	
-	nav ul li {
-		margin-left: 0;
-	}
-	
 }	
-	
 
 nav ul li a {
 	color: #000;
@@ -221,29 +213,29 @@ nav ul li a.active {
 
 
 nav ul li:last-child a {
-	display: inline-block;
-	color: #bbb;
-	background-color: #666;
-	padding: 0.3125rem 1.2rem;
-	border-radius: 6px;	
-	font-weight: $font-bold;	
-	text-indent: 0;
-	&:hover {
-		background-color: #ccc;
-    }
+	display: none;
 }
 
 nav ul li:last-child a:last-child {
-	margin-left: 2rem;
+	display: none;
 }
 
 @media (#{$bp-larger-than-tablet}) {
 
 	nav ul li:last-child a {
+		display: inline-block;
+		color: #bbb;
+		background-color: #666;
+		border-radius: 6px;	
+		font-weight: $font-bold;	
 		padding: 0.3125rem 0.5rem;
+		&:hover {
+			background-color: #ccc;
+	    }
 	}
 
 	nav ul li:last-child a:last-child {
+		display: inline-block;
 		margin-left: 1rem;
 	}
 	
@@ -257,21 +249,28 @@ nav ul li:last-child a.active {
     }
 }
 	
-label {
+.mobile-wrap {
+	display: inline;
+	height: 40px;
+	position: absolute;
+	right: 7.5%;
+	top: 10px;
+}	
+	
+nav label {
+	position: absolute;
+	top: 1rem;
+	left: 7.5%;
 	display: block;
 	background: #eee;
 	width: 40px;
 	height: 40px;
 	cursor: pointer;
-	position: absolute;
-	left: 7.5%;
-	top: 10px;
-	
 }
 
-label:after{
+nav label:after{
 	content:'';
-	display: block;
+	display: inline-block;
 	width: 30px;
 	height: 5px;
 	background: #777;
@@ -282,12 +281,54 @@ label:after{
 
 @media (#{$bp-larger-than-mobile}) {
 	
-	label {
+	nav label {
 		margin-left: 0;
 	}
 
 }
 
+.eng-mobile,
+.esp-mobile {
+	display: inline-block;
+	color: #fff;
+	background-color: #666;
+	border-radius: 6px;	
+	font-size: 2rem;
+	font-weight: $font-bold;	
+	padding: 0.3125rem 0.75rem;
+	cursor: pointer;
+	margin-left: 1rem;
+	text-decoration: none;
+	&:hover {
+		color: #fff;
+    }
+}
+
+.eng-mobile {
+	background-color: #666;
+}
+
+.esp-mobile {
+	background-color: #f00;
+}
+
+@media (#{$bp-larger-than-tablet}) {
+	
+	.eng-mobile,
+	.esp-mobile {
+		display: none;
+	}
+	
+	
+}
+
+@media (#{$bp-larger-than-tablet}) {
+	
+	nav label {
+		display: none;
+	}
+	
+}
 
 nav [type="checkbox"] {
 	display: none;
@@ -295,10 +336,10 @@ nav [type="checkbox"] {
 
 @media (#{$bp-larger-than-tablet}) {
 	
-	nav [type="checkbox"], label {
-		  display: none;
+	nav [type="checkbox"] {
+		display: none;
 	}
-	
+		
 }
 
 [type="checkbox"]:checked ~ ul {
