@@ -700,7 +700,7 @@ header {
   height: 85px; }
 
 .logo {
-  background-color: #777;
+  background-color: #808080;
   font-size: 30px;
   height: 75px;
   width: 150px;
@@ -840,7 +840,7 @@ nav > [type="checkbox"] {
   nav ul li {
     margin-left: 25px; } }
 .directory {
-  background-color: #fc0;
+  background-color: #333;
   text-align: center; }
 
 @media (min-width: 550px) {
@@ -859,7 +859,8 @@ nav > [type="checkbox"] {
   min-height: 15rem;
   justify-content: center;
   color: #fff;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-bottom: 2rem; }
 
 @media (min-width: 550px) {
   .directory-link {
@@ -869,24 +870,25 @@ nav > [type="checkbox"] {
     min-height: 16rem; } }
 @media (min-width: 900px) {
   .directory-link {
-    min-height: 24rem; } }
+    min-height: 24rem;
+    margin-bottom: 0; } }
 .directory-link.staffing {
-  background-color: #444; }
+  background-color: #808080; }
   .directory-link.staffing:hover {
-    color: #fcc;
-    background-color: blue; }
+    color: #808080;
+    background-color: #ccc; }
 
 .directory-link.construction {
-  background-color: #ddd; }
+  background-color: #808080; }
   .directory-link.construction:hover {
-    color: #fcc;
-    background-color: aqua; }
+    color: #808080;
+    background-color: #ccc; }
 
 .directory-link.cleaning {
-  background-color: #345; }
+  background-color: #808080; }
   .directory-link.cleaning:hover {
-    color: #fcc;
-    background-color: orange; }
+    color: #808080;
+    background-color: #ccc; }
 
 .directory-link h3 {
   margin: 0 1rem;
@@ -910,6 +912,14 @@ nav > [type="checkbox"] {
 .interior h6 {
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #ddd; }
+
+.interior .subhead-bold {
+  font-weight: 700;
+  margin-bottom: 0; }
+
+.interior .subhead-italic {
+  font-style: italic;
+  margin-bottom: 1rem; }
 
 .interior .one-third.column {
   width: 100%; }
@@ -940,14 +950,30 @@ nav > [type="checkbox"] {
   .sidebar.shaded {
     margin-top: 0;
     margin-left: 4%; } }
+.sidebar h4 {
+  margin-bottom: 0; }
+
 .sidebar p {
   font-size: 1.8rem; }
 
-@media (min-width: 550px) {
+@media (min-width: 900px) {
   .sidebar p {
     font-size: 1.6rem;
     line-height: 1.7; } }
-footer {
+.sidebar .headshot {
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 0.5rem 1.25rem 0 0;
+  display: inline-block; }
+
+@media (min-width: 400px) {
+  .sidebar .headshot {
+    width: 40%; } }
+@media (min-width: 900px) {
+  .sidebar .headshot {
+    width: 50%; } }
+footer .columns {
   border-top: 0.5rem solid #eee;
   padding: 3rem 0;
   text-align: center; }
@@ -962,4 +988,5 @@ footer p {
 .social {
   display: inline-block;
   height: 40px;
-  width: 40px; }
+  width: 40px;
+  margin: 0 1rem; }

@@ -3,6 +3,16 @@
 	border-bottom: 1px solid #ddd;
 }
 
+.interior .subhead-bold {
+	font-weight: $font-bold;
+	margin-bottom: 0;
+}
+
+.interior .subhead-italic {
+	font-style: italic;
+	margin-bottom: 1rem;
+}
+
 .interior .one-third.column { 
 	width: 100%; 
 }
@@ -50,15 +60,43 @@
 	
 }
 
+.sidebar h4 {
+	margin-bottom: 0;
+}
+
 .sidebar p  { 
 	font-size: 1.8rem; 
 }
 	
-@media (#{$bp-larger-than-phablet}) {
+@media (#{$bp-larger-than-tablet-hd}) {
 	
 	.sidebar p  { 
 		font-size: 1.6rem; 
 		line-height: 1.7;  
+	}
+	
+}	
+
+.sidebar .headshot {
+	width: 100%;
+	height: auto;
+	float: left;
+	margin: 0.5rem 1.25rem 0 0;
+	display: inline-block;
+}
+
+@media (#{$bp-larger-than-mobile}) {
+	
+	.sidebar .headshot  { 
+		width: 40%;
+	}
+	
+}	
+
+@media (#{$bp-larger-than-tablet-hd}) {
+	
+	.sidebar .headshot  { 
+		width: 50%;
 	}
 	
 }	
