@@ -703,59 +703,65 @@ header {
     background: #eee;
     padding: 20px 0;
     height: auto; } }
-.xyz {
-  width: 100%;
-  position: relative;
-  display: block;
-  height: 6rem;
-  margin: 0 auto; }
-
-@media (min-width: 750px) {
-  .xyz {
-    height: auto; } }
-@media (min-width: 900px) {
-  .xyz {
-    width: 100%;
-    height: 7.5rem;
-    padding: 0;
-    margin: 0; } }
-.abcd {
-  width: 100%;
-  position: relative;
-  display: block;
-  height: 6rem;
-  margin: 0 auto; }
-
-@media (min-width: 750px) {
-  .abcd {
-    height: auto;
-    width: 85%; } }
-@media (min-width: 900px) {
-  .abcd {
-    width: 100%;
-    height: 7.5rem;
-    padding: 0;
-    margin: 0; } }
-.menu {
+.nav-outer-wrap {
   position: relative;
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
   padding: 0;
-  box-sizing: border-box;
-  background-color: aquamarine; }
+  box-sizing: border-box; }
 
 @media (min-width: 900px) {
-  .menu {
+  .nav-outer-wrap {
     padding: 0;
     width: 80%; } }
-.logo-wrap {
-  float: left;
+.nav-inner-wrap {
   width: 100%;
-  margin: 6rem 0 0 0; }
+  position: relative;
+  display: block;
+  height: 6rem;
+  margin: 0 auto;
+  background-color: #000; }
 
 @media (min-width: 750px) {
-  .logo-wrap {
+  .nav-inner-wrap {
+    background-color: transparent;
+    height: auto; } }
+@media (min-width: 900px) {
+  .nav-inner-wrap {
+    width: 100%;
+    height: 7.5rem;
+    padding: 0;
+    margin: 0; } }
+.navigation {
+  width: 100%;
+  position: relative;
+  display: block;
+  height: 6rem;
+  margin: 0 auto; }
+
+@media (min-width: 750px) {
+  .navigation {
+    height: auto;
+    width: 85%; } }
+@media (min-width: 900px) {
+  .navigation {
+    width: 100%;
+    height: 7.5rem;
+    padding: 0;
+    margin: 0; } }
+.brand {
+  float: left;
+  width: 100%;
+  margin: 7rem 0 0 0; }
+
+.nav-outer-wrap:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+@media (min-width: 750px) {
+  .brand {
     margin: 0;
     display: block;
     float: none;
@@ -776,7 +782,7 @@ header {
 nav ul {
   display: none;
   padding-bottom: 1.5rem;
-  background-color: #eee;
+  background-color: #000;
   right: 0;
   left: 0;
   top: 6rem;
@@ -821,7 +827,7 @@ nav ul li {
     cursor: pointer;
     position: relative; } }
 nav ul li a {
-  color: #000;
+  color: #fff;
   display: block;
   text-decoration: none; }
 
@@ -853,26 +859,19 @@ nav ul li:last-child a:last-child {
     display: inline-block;
     margin-left: 1rem; } }
 nav ul li:last-child a.active {
-  background-color: #f00;
+  background-color: #0fb500;
   color: #fff; }
   nav ul li:last-child a.active:hover {
-    background-color: #fcc; }
-
-.mobile-wrap {
-  display: inline;
-  height: 40px;
-  position: absolute;
-  right: 7.5%;
-  top: 10px; }
+    background-color: #9dd29c; }
 
 nav label {
   position: absolute;
   top: 1rem;
   left: 7.5%;
   display: block;
-  background: #eee;
-  width: 40px;
-  height: 40px;
+  background: #555;
+  width: 4rem;
+  height: 4rem;
   cursor: pointer; }
 
 nav label:after {
@@ -880,13 +879,23 @@ nav label:after {
   display: inline-block;
   width: 30px;
   height: 5px;
-  background: #777;
+  background: #ddd;
   margin: 7px 5px;
-  box-shadow: 0px 10px 0px #777, 0px 20px 0px #777; }
+  box-shadow: 0px 10px 0px #ddd, 0px 20px 0px #ddd; }
 
 @media (min-width: 400px) {
   nav label {
     margin-left: 0; } }
+.mobile-language-wrap {
+  display: inline;
+  height: 40px;
+  position: absolute;
+  right: 7.5%;
+  top: 10px; }
+
+@media (min-width: 750px) {
+  .mobile-language-wrap {
+    display: none; } }
 .eng-mobile,
 .esp-mobile {
   display: inline-block;
@@ -898,21 +907,16 @@ nav label:after {
   padding: 0.3125rem 0.75rem;
   cursor: pointer;
   margin-left: 1rem;
-  text-decoration: none; }
+  text-decoration: none;
+  background-color: #666; }
   .eng-mobile:hover,
   .esp-mobile:hover {
     color: #fff; }
 
-.eng-mobile {
-  background-color: #666; }
+.eng-mobile.active,
+.esp-mobile.active {
+  background-color: #0fb500; }
 
-.esp-mobile {
-  background-color: #f00; }
-
-@media (min-width: 750px) {
-  .eng-mobile,
-  .esp-mobile {
-    display: none; } }
 @media (min-width: 750px) {
   nav label {
     display: none; } }
