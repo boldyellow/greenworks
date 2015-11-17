@@ -122,4 +122,13 @@
 		width: 50%;
 	}
 	
-}	
+}
+
+.type-color {
+	color: $primary-color;
+}
+
+.type-bold-color {
+	font-weight: $font-bold;
+	color: $primary-color;
+}

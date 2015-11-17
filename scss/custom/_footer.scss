@@ -6,16 +6,33 @@ footer .columns {
 
 footer h5 {
 	font-weight: $font-bold; 
-	color: $brand-color;
+	color: $primary-color;
 }
 
 footer p {
 	font-size: 1.4rem;
 }
 
-.social {
-	 display: inline-block;
-	 height: 40px;
-	 width: 40px;
-	 margin: 0 1rem;
+footer .ten.columns { 
+	width: 100%; 
+}
+
+footer .offset-by-one.column,
+footer .offset-by-one.columns { 
+	margin-left: 0;
+}
+
+
+@media (#{$bp-larger-than-tablet-hd}) {
+	
+	footer .ten.columns { 
+		width: grid-column-width(10);
+	}
+
+	footer .offset-by-one.column,
+	footer .offset-by-one.columns { 
+		margin-left: grid-offset-length(1);
+	}
+	
+	
 }

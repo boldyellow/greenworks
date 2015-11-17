@@ -8,8 +8,8 @@ button {
   padding: 0 30px;
   color: $secondary-color;
   text-align: center;
-  font-size: 11px;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: $font-bold;
   line-height: 38px;
   letter-spacing: .1rem;
   text-transform: uppercase;
@@ -31,8 +31,8 @@ input {
     padding: 0 30px;
     color: $secondary-color;
     text-align: center;
-    font-size: 11px;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: $font-bold;
     line-height: 38px;
     letter-spacing: .1rem;
     text-transform: uppercase;
@@ -49,7 +49,7 @@ input {
 .button:hover,
 button:hover {
   color: $dark-grey;
-  border-color: lighten($dark-grey, 33.3%);
+  border-color: $dark-grey;
   outline: 0;
 }
 
@@ -100,8 +100,8 @@ input {
 .button.button-primary:hover,
 button.button-primary:hover {
   color: #fff;
-  background-color: $link-color;
-  border-color: $link-color;
+  background-color: $dark-grey;
+  border-color: $dark-grey;
 }
 
 input {
@@ -109,8 +109,8 @@ input {
   &[type="reset"].button-primary:hover,
   &[type="button"].button-primary:hover {
     color: #fff;
-    background-color: $link-color;
-    border-color: $link-color;
+    background-color: $dark-grey;
+    border-color: $dark-grey;
   }
 }
 
