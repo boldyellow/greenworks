@@ -788,7 +788,8 @@ header {
 @media (min-width: 750px) {
   .nav-inner-wrap {
     background-color: transparent;
-    height: auto; } }
+    height: auto;
+    margin: 1rem auto; } }
 @media (min-width: 900px) {
   .nav-inner-wrap {
     width: 100%;
@@ -815,7 +816,7 @@ header {
 .brand {
   float: left;
   width: 100%;
-  margin: 7rem 0 0 0; }
+  margin: 7rem 0 1rem 0; }
 
 @media (min-width: 750px) {
   .brand {
@@ -1003,22 +1004,40 @@ nav [type="checkbox"] {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 15rem;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  float: left;
+  box-sizing: border-box;
+  margin: 0 0 2rem 0;
+  width: 100%;
+  min-height: 25rem;
   color: #fff;
-  text-decoration: none;
-  margin-bottom: 2rem; }
+  text-decoration: none; }
 
 @media (min-width: 550px) {
   .directory-link {
-    min-height: 14rem; } }
+    width: 30.6666666667%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    min-height: 14rem;
+    margin-left: 4%; }
+
+  .directory-link:first-child {
+    margin-left: 0; } }
 @media (min-width: 750px) {
   .directory-link {
     min-height: 16rem; } }
@@ -1045,20 +1064,23 @@ nav [type="checkbox"] {
     background-color: #ccc; }
 
 .directory-link h3 {
-  margin: 0 1rem;
+  font-size: 3rem;
   text-align: center;
-  font-size: 3rem; }
+  margin: 0 3rem; }
 
 @media (min-width: 550px) {
   .directory-link h3 {
-    font-size: 2.25rem;
-    letter-spacing: -0.05rem; } }
+    font-size: 2rem;
+    letter-spacing: -0.05rem;
+    margin: 0 1rem; } }
 @media (min-width: 750px) {
   .directory-link h3 {
-    font-size: 2.5rem; } }
+    font-size: 2.5rem;
+    margin: 0 2rem; } }
 @media (min-width: 900px) {
   .directory-link h3 {
-    font-size: 3rem; } }
+    font-size: 3rem;
+    margin: 0 3rem; } }
 .overview {
   text-align: center;
   min-height: 15rem; }
