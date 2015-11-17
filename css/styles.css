@@ -678,7 +678,6 @@ form {
   margin-bottom: 2.5rem; }
 
 /* custom */
-/* custom */
 section {
   padding: 3rem 0; }
 
@@ -701,8 +700,66 @@ header {
 @media (min-width: 750px) {
   header {
     background: #eee;
-    padding: 20px 0;
+    padding: 0;
     height: auto; } }
+.connect-bar {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #0fb500;
+  text-align: center; }
+
+.connect-bar a {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-decoration: none;
+  min-height: 4rem;
+  margin: 0 0.5rem 0 2rem; }
+
+@media (min-width: 550px) {
+  .connect-bar a {
+    font-size: 1.75rem; }
+
+  .connect-bar a:hover {
+    opacity: 0.5; } }
+.connect-bar a:first-child {
+  margin-left: 0; }
+
+.connect-bar a .icon {
+  display: inline-block;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-right: 0.5rem; }
+
+.connect-bar a .facebook {
+  display: none; }
+
+.connect-bar a .linkedin {
+  display: none; }
+
+@media (min-width: 550px) {
+  .connect-bar a .facebook {
+    display: inline-block; }
+
+  .connect-bar a .linkedin {
+    display: inline-block; } }
 .nav-outer-wrap {
   position: relative;
   width: 100%;
@@ -711,9 +768,14 @@ header {
   padding: 0;
   box-sizing: border-box; }
 
+.nav-outer-wrap:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 @media (min-width: 900px) {
   .nav-outer-wrap {
-    padding: 0;
+    padding: 2rem 0;
     width: 80%; } }
 .nav-inner-wrap {
   width: 100%;
@@ -754,11 +816,6 @@ header {
   float: left;
   width: 100%;
   margin: 7rem 0 0 0; }
-
-.nav-outer-wrap:after {
-  content: "";
-  display: table;
-  clear: both; }
 
 @media (min-width: 750px) {
   .brand {
@@ -943,13 +1000,18 @@ nav [type="checkbox"] {
     padding: 0 0 4rem 0; } }
 .directory-link {
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 15rem;
-  justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #fff;
   text-decoration: none;
   margin-bottom: 2rem; }

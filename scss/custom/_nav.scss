@@ -7,10 +7,74 @@ header {
 	
 	header {
 		background: #eee;
-		padding: 20px 0;
+		padding: 0;
 		height: auto;
 	}
 	
+}
+
+
+.connect-bar {
+    width: 100%;
+ 	box-sizing: border-box;
+	background-color: $brand-color;
+	text-align: center;
+}
+
+.connect-bar a {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-weight: $font-bold;
+	font-size: 1.5rem;
+	text-decoration: none;
+	min-height: 4rem;
+	 margin: 0 0.5rem 0 2rem;
+}
+
+@media (#{$bp-larger-than-phablet}) {
+	
+	.connect-bar a {
+		font-size: 1.75rem;
+	}
+	
+	.connect-bar a:hover {
+		opacity: 0.5;
+	}
+	
+}
+
+.connect-bar a:first-child {
+	 margin-left: 0;
+}
+
+.connect-bar a .icon {
+	display: inline-block;
+	height: 2.5rem;
+	width: 2.5rem;
+	margin-right: 0.5rem;
+}
+
+.connect-bar a .facebook {
+	display: none;
+}
+
+.connect-bar a .linkedin {
+	display: none;
+}
+
+@media (#{$bp-larger-than-phablet}) {
+	
+	.connect-bar a .facebook {
+		display: inline-block;
+	}
+	
+	.connect-bar a .linkedin {
+		display: inline-block;
+	}
+
 }
 
 .nav-outer-wrap {
@@ -22,10 +86,16 @@ header {
     box-sizing: border-box;
 }
 
+.nav-outer-wrap:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 @media (#{$bp-larger-than-tablet-hd}) {
 	
 	.nav-outer-wrap {
-		padding: 0;
+		padding: 2rem 0;
 		width: 80%;
 	}
 }
@@ -92,12 +162,6 @@ header {
     float: left;
     width: 100%;
 	margin: 7rem 0 0 0;
-}
-
-.nav-outer-wrap:after {
-	content: "";
-	display: table;
-	clear: both;
 }
 
 

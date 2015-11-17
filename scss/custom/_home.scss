@@ -20,7 +20,7 @@
 }
 
 .directory-link {
-	@include flexbox();
+	display: flex;
 	align-items: center;
 	min-height: 15rem;
 	justify-content: center;
