@@ -232,6 +232,9 @@ hr {
 .u-pull-left {
   float: left; }
 
+.u-margin-bottom-0 {
+  margin-bottom: 0; }
+
 .u-margin-bottom-1 {
   margin-bottom: 1rem; }
 
@@ -1003,7 +1006,7 @@ nav [type="checkbox"] {
   position: absolute; }
 
 .directory {
-  background-color: #333;
+  background-color: #ccc;
   text-align: center; }
 
 @media (min-width: 600px) {
@@ -1062,19 +1065,19 @@ nav [type="checkbox"] {
   background-color: #808080; }
   .directory-link.staffing:hover {
     color: #808080;
-    background-color: #ccc; }
+    background-color: #eee; }
 
 .directory-link.construction {
   background-color: #808080; }
   .directory-link.construction:hover {
     color: #808080;
-    background-color: #ccc; }
+    background-color: #eee; }
 
 .directory-link.cleaning {
   background-color: #808080; }
   .directory-link.cleaning:hover {
     color: #808080;
-    background-color: #ccc; }
+    background-color: #eee; }
 
 .directory-link h3 {
   font-size: 3rem;
