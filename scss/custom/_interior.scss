@@ -25,8 +25,17 @@
 	width: 100%; 
 }
 
+.interior .ten.columns { 
+	width: 100%; 
+}
 
-@media (#{$bp-larger-than-tablet-hd}) {
+.interior .offset-by-one.column,
+.interior .offset-by-one.columns { 
+	margin-left: 0;
+}
+
+
+@media (#{$bp-larger-than-phablet}) {
 	
 	.interior .one-third.column { 
 		width: grid-column-width(4);
@@ -42,6 +51,20 @@
 
 }
 
+@media (#{$bp-larger-than-tablet-hd}) {
+	
+	.interior .ten.columns { 
+		width: grid-column-width(10);
+	}
+
+	.interior .offset-by-one.column,
+	.interior .offset-by-one.columns { 
+		margin-left: grid-offset-length(1);
+	}
+	
+	
+}
+
 .sidebar.shaded {
 	background-color: #eee;
 	padding: 1.5rem;
@@ -51,7 +74,7 @@
 	 
 }
 
-@media (#{$bp-larger-than-tablet-hd}) {
+@media (#{$bp-larger-than-phablet}) {
 	
 	.sidebar.shaded { 
 		margin-top: 0;
@@ -65,10 +88,10 @@
 }
 
 .sidebar p  { 
-	font-size: 1.8rem; 
+	font-size: 1.7rem; 
 }
 	
-@media (#{$bp-larger-than-tablet-hd}) {
+@media (#{$bp-larger-than-phablet}) {
 	
 	.sidebar p  { 
 		font-size: 1.6rem; 

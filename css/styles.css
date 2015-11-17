@@ -244,6 +244,12 @@ hr {
 .u-margin-bottom-4 {
   margin-bottom: 4rem; }
 
+.u-hide-up-to-phablet {
+  display: none; }
+
+@media (min-width: 600px) {
+  .u-hide-up-to-phablet {
+    display: block; } }
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
@@ -279,12 +285,12 @@ h6 {
   line-height: 1.6;
   letter-spacing: -.01rem; }
 
-p {
+p, li {
   font-size: 1.8rem;
   line-height: 1.6;
   letter-spacing: -.01rem; }
 
-@media (min-width: 550px) {
+@media (min-width: 600px) {
   h1 {
     font-size: 4.0rem; }
 
@@ -301,10 +307,10 @@ p {
     font-size: 2.2rem; }
 
   h6 {
-    font-size: 1.9rem; }
+    font-size: 1.8rem; }
 
-  p {
-    font-size: 1.9rem; } }
+  p, li {
+    font-size: 1.8rem; } }
 @media (min-width: 750px) {
   h1 {
     font-size: 5.0rem; }
@@ -322,12 +328,19 @@ p {
     font-size: 2.5rem; }
 
   h6 {
-    font-size: 2.1rem; }
+    font-size: 2.0rem; }
 
-  p {
-    font-size: 2.1rem; } }
-p {
+  p, li {
+    font-size: 2.0rem; } }
+p, li {
   margin-top: 0; }
+
+section ul {
+  list-style-type: square; }
+
+section ul li {
+  padding-left: 2rem;
+  text-indent: -2rem; }
 
 /*
 * Skeleton V2.0.4
@@ -360,9 +373,9 @@ p {
 .offset-by-one.columns {
   margin-left: 0; }
 
-@media (min-width: 900px) {
+@media (min-width: 600px) {
   .container {
-    width: 80%; }
+    width: 85%; }
 
   .column,
   .columns {
@@ -679,7 +692,7 @@ form {
 
 /* custom */
 section {
-  padding: 3rem 0; }
+  padding: 2rem 0; }
 
 @media (min-width: 750px) {
   section {
@@ -733,7 +746,7 @@ header {
   min-height: 4rem;
   margin: 0 0.5rem 0 2rem; }
 
-@media (min-width: 550px) {
+@media (min-width: 600px) {
   .connect-bar a {
     font-size: 1.75rem; }
 
@@ -754,7 +767,7 @@ header {
 .connect-bar a .linkedin {
   display: none; }
 
-@media (min-width: 550px) {
+@media (min-width: 600px) {
   .connect-bar a .facebook {
     display: inline-block; }
 
@@ -993,7 +1006,7 @@ nav [type="checkbox"] {
   background-color: #333;
   text-align: center; }
 
-@media (min-width: 550px) {
+@media (min-width: 600px) {
   .directory h1 {
     padding: 0 0 3rem 0; } }
 @media (min-width: 750px) {
@@ -1025,7 +1038,7 @@ nav [type="checkbox"] {
   color: #fff;
   text-decoration: none; }
 
-@media (min-width: 550px) {
+@media (min-width: 600px) {
   .directory-link {
     width: 30.6666666667%;
     -webkit-box-orient: horizontal;
@@ -1068,7 +1081,7 @@ nav [type="checkbox"] {
   text-align: center;
   margin: 0 3rem; }
 
-@media (min-width: 550px) {
+@media (min-width: 600px) {
   .directory-link h3 {
     font-size: 2rem;
     letter-spacing: -0.05rem;
@@ -1106,7 +1119,14 @@ nav [type="checkbox"] {
 .interior .one-half.column {
   width: 100%; }
 
-@media (min-width: 900px) {
+.interior .ten.columns {
+  width: 100%; }
+
+.interior .offset-by-one.column,
+.interior .offset-by-one.columns {
+  margin-left: 0; }
+
+@media (min-width: 600px) {
   .interior .one-third.column {
     width: 30.6666666667%; }
 
@@ -1115,6 +1135,13 @@ nav [type="checkbox"] {
 
   .interior .one-half.column {
     width: 48%; } }
+@media (min-width: 900px) {
+  .interior .ten.columns {
+    width: 82.6666666667%; }
+
+  .interior .offset-by-one.column,
+  .interior .offset-by-one.columns {
+    margin-left: 8.6666666667%; } }
 .sidebar.shaded {
   background-color: #eee;
   padding: 1.5rem;
@@ -1122,7 +1149,7 @@ nav [type="checkbox"] {
   margin-bottom: 2rem;
   margin-left: 0; }
 
-@media (min-width: 900px) {
+@media (min-width: 600px) {
   .sidebar.shaded {
     margin-top: 0;
     margin-left: 4%; } }
@@ -1130,9 +1157,9 @@ nav [type="checkbox"] {
   margin-bottom: 0; }
 
 .sidebar p {
-  font-size: 1.8rem; }
+  font-size: 1.7rem; }
 
-@media (min-width: 900px) {
+@media (min-width: 600px) {
   .sidebar p {
     font-size: 1.6rem;
     line-height: 1.7; } }

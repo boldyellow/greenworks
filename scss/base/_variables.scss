@@ -3,7 +3,7 @@
 
 // Breakpoints
 $bp-larger-than-mobile    : "min-width: 400px";
-$bp-larger-than-phablet   : "min-width: 550px";
+$bp-larger-than-phablet   : "min-width: 600px";
 $bp-larger-than-tablet    : "min-width: 750px";
 $bp-larger-than-tablet-hd : "min-width: 900px";
 $bp-larger-than-desktop   : "min-width: 1000px";
@@ -26,7 +26,7 @@ $font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, A
 //Grid Variables
 $container-width: 960px;
 $container-width-larger-than-mobile: 85%;
-$container-width-larger-than-phablet: 80%;
+$container-width-larger-than-phablet: 85%;
 $total-columns: 12;
 $column-width: 100 / $total-columns; // calculates individual column width based off of # of columns
 $column-margin: 4%; // space between columns

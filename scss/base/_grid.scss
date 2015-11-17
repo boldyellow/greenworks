@@ -37,8 +37,8 @@
 .offset-by-one.columns       { margin-left: 0;  }
 
 
-// For devices larger than 550px
-@media (#{$bp-larger-than-tablet-hd}) {
+// For devices larger than 750px
+@media (#{$bp-larger-than-phablet}) {
   .container {
     width: $container-width-larger-than-phablet;
   }

@@ -1,6 +1,7 @@
 // Utilities
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+
 .u-full-width {
   width: 100%;
   box-sizing: border-box;
@@ -34,3 +35,14 @@
 .u-margin-bottom-4 {
 	margin-bottom: 4rem;
 }
+
+.u-hide-up-to-phablet {
+	display: none;
+}
+
+@media (#{$bp-larger-than-phablet}) {
+	.u-hide-up-to-phablet {
+		display: block;
+	}
+}
+
