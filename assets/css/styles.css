@@ -345,6 +345,9 @@ section ul li {
   padding-left: 2rem;
   text-indent: -2rem; }
 
+.text-center {
+  text-align: center; }
+
 /*
 * Skeleton V2.0.4
 * Copyright 2014, Dave Gamache
@@ -868,8 +871,7 @@ nav ul {
   background-color: #000;
   right: 0;
   left: 0;
-  top: 5rem;
-  font-size: 2rem; }
+  top: 5rem; }
 
 @media (min-width: 400px) {
   nav ul {
@@ -879,13 +881,13 @@ nav ul {
   nav ul {
     display: inline-block;
     float: right;
-    margin: 2.1rem 0 0 0;
+    margin: 2.7rem 0 0 0;
     list-style: none;
-    background-color: transparent;
-    font-size: 1.7rem; } }
+    background-color: transparent; } }
 @media (min-width: 900px) {
   nav ul {
-    font-size: 2rem; } }
+    margin: 3.9rem 0 0 0;
+    padding-bottom: 0; } }
 nav ul li {
   display: block;
   float: none;
@@ -893,7 +895,9 @@ nav ul li {
   text-align: left;
   margin: 0 0 0 7.5%;
   text-indent: 0;
-  padding: 15px 0 0 0; }
+  padding: 15px 0 0 0;
+  font-size: 2rem;
+  font-weight: 600; }
 
 @media (min-width: 750px) {
   nav ul li {
@@ -904,11 +908,15 @@ nav ul li {
     background-color: transparent;
     text-indent: 0;
     width: auto;
-    padding: 0; }
+    padding: 0;
+    font-size: 1.75rem; }
 
   nav ul li:hover {
     cursor: pointer;
     position: relative; } }
+@media (min-width: 900px) {
+  nav ul li {
+    font-size: 2rem; } }
 nav ul li a {
   color: #fff;
   display: block;
@@ -1185,8 +1193,10 @@ nav [type="checkbox"] {
   .interior .offset-by-one.column,
   .interior .offset-by-one.columns {
     margin-left: 8.6666666667%; } }
+.shaded {
+  background-color: #ffd93f; }
+
 .sidebar.shaded {
-  background-color: #eee;
   padding: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -1226,6 +1236,36 @@ nav [type="checkbox"] {
   font-weight: 600;
   color: #0fb500; }
 
+.offerings .column {
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  min-height: 100px; }
+
+.offerings a {
+  text-decoration: none; }
+
+.offerings a span {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  letter-spacing: -.10rem;
+  font-weight: 600;
+  display: block;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #000; }
+
+.offerings a img {
+  display: none; }
+
+@media (min-width: 600px) {
+  .offerings .column {
+    min-height: 400px; }
+
+  .offerings a img {
+    display: block; }
+
+  .offerings a span {
+    font-size: 2rem; } }
 footer .columns {
   border-top: 0.5rem solid #eee;
   padding: 3rem 0;

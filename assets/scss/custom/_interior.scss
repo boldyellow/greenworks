@@ -65,8 +65,11 @@
 	
 }
 
+.shaded {
+	background-color: $background-highlight;
+}
+
 .sidebar.shaded {
-	background-color: #eee;
 	padding: 1.5rem;
 	margin-top: 1rem;
 	margin-bottom: 2rem;
@@ -132,3 +135,46 @@
 	font-weight: $font-bold;
 	color: $primary-color;
 }
+
+.offerings .column  { 
+	padding: 1.5rem; 
+	margin-bottom: 2rem;
+	min-height: 100px; 
+}
+
+.offerings a {
+	text-decoration: none;
+}
+
+.offerings a span {
+	font-size: 2.5rem; 
+	line-height: 1.1;  
+	letter-spacing: -.10rem;
+	font-weight: $font-bold;
+	display: block;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	color: #000;
+}
+
+.offerings a img  { 
+	display: none; 
+}
+
+@media (#{$bp-larger-than-phablet}) {
+	
+	.offerings .column  { 
+		min-height: 400px; 
+	}
+	
+	.offerings a img  { 
+		display: block; 
+	}
+	
+	.offerings a span  { 
+		font-size: 2rem; 
+	}
+	
+}	
+
+

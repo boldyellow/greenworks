@@ -221,7 +221,6 @@ nav ul {
 	right: 0;
 	left: 0;
 	top: 5rem;
-	font-size: 2rem;
 }
 
 @media (#{$bp-larger-than-mobile}) {
@@ -238,10 +237,9 @@ nav ul {
 	nav ul {
 		display: inline-block;
 	  	float: right;
-	  	margin: 2.1rem 0 0 0;
+	  	margin: 2.7rem 0 0 0;
 	  	list-style: none;
 	  	background-color: transparent;
-		font-size: 1.7rem;
 	}
 	
 }
@@ -249,7 +247,8 @@ nav ul {
 @media (#{$bp-larger-than-tablet-hd}) {
 	
 	nav ul {
-		font-size: 2rem;
+	  	margin: 3.9rem 0 0 0;
+	  	padding-bottom: 0;
 	}
 
 }
@@ -262,6 +261,8 @@ nav ul li {
 	margin: 0 0 0 7.5%;
 	text-indent: 0;
 	padding: 15px 0 0 0;
+	font-size: 2rem;
+	font-weight: $font-bold;
 }
 
 @media (#{$bp-larger-than-tablet}) {
@@ -275,12 +276,21 @@ nav ul li {
 		text-indent: 0;
 		width: auto;
 		padding: 0;
+		font-size: 1.75rem;
 	}
 
 	nav ul li:hover {
 		  cursor: pointer;
 		  position: relative;
 	}
+}	
+
+@media (#{$bp-larger-than-tablet-hd}) {
+	
+	nav ul li {
+		font-size: 2rem;
+	}
+
 }	
 
 nav ul li a {
