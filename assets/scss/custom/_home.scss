@@ -1,11 +1,11 @@
-.directory {
+.featured {
 	background-color: $background-highlight;
 	text-align: center;
 }
 
 @media (#{$bp-larger-than-phablet}) {
 
-	.directory h1 {
+	.featured h1 {
 		padding: 0 0 3rem 0;
 	}
 	
@@ -13,13 +13,13 @@
 
 @media (#{$bp-larger-than-tablet}) {
 
-	.directory h1 {
+	.featured h1 {
 		padding: 0 0 4rem 0;
 	}
 	
 }
 
-.directory-link {
+.featured-link {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -35,39 +35,39 @@
 	position: relative;
 }
 
-.directory-link:hover {
+.featured-link:hover {
 	color: #fff;
 }
 
 @media (#{$bp-larger-than-phablet}) {
 	
-	.directory-link {
+	.featured-link {
 		width: grid-column-width(4);
 		flex-direction: row;
 		min-height: 14rem;
 		margin-left: $column-margin;
 	}
 	
-	.directory-link:first-child {
+	.featured-link:first-child {
 		margin-left: 0;
 	}
 	
 }
 
 @media (#{$bp-larger-than-tablet}) {
-	.directory-link {
+	.featured-link {
 		min-height: 16rem;
 	}
 }
 
 @media (#{$bp-larger-than-tablet-hd}) {
-	.directory-link {
+	.featured-link {
 		min-height: 24rem;
 		margin-bottom: 0;
 	}
 }
 
-.directory-link .overlay-tint h3 {
+.featured-link .overlay-tint h3 {
 	font-size: 2.25rem; 
 	font-weight: $font-bold;
 	text-align: center;
@@ -76,7 +76,7 @@
 
 @media (#{$bp-larger-than-phablet}) {
 		
-	.directory-link .overlay-tint h3 { 
+	.featured-link .overlay-tint h3 { 
 		font-size: 2rem; 
 		letter-spacing: -0.05rem;
 		margin: 0 1rem;
@@ -86,7 +86,7 @@
 
 @media (#{$bp-larger-than-tablet}) {
 		
-	.directory-link .overlay-tint h3 { 
+	.featured-link .overlay-tint h3 { 
 		font-size: 2.5rem; 
 		margin: 0 2rem;
 	}
@@ -94,7 +94,7 @@
 
 @media (#{$bp-larger-than-tablet-hd}) {
 		
-	.directory-link .overlay-tint h3 { 
+	.featured-link .overlay-tint h3 { 
 		font-size: 3rem; 
 		margin: 0 3rem;
 	}
@@ -126,7 +126,7 @@
 
 @media (#{$bp-larger-than-phablet}) {
 	
-	.directory-link.staffing {
+	.featured-link.staffing {
 		background: transparent url('../img/fpo-home-staffing.jpg') no-repeat 50% 50%;
 		background-size: cover;
 	}
@@ -135,7 +135,7 @@
 
 @media (#{$bp-larger-than-phablet}) {
 	
-	.directory-link.construction {
+	.featured-link.construction {
 		background: transparent url('../img/fpo-home-demo.jpg') no-repeat 50% 50%;
 		background-size: cover;
 	}
@@ -144,7 +144,7 @@
 
 @media (#{$bp-larger-than-phablet}) {
 	
-	.directory-link.cleaning {
+	.featured-link.cleaning {
 		background: transparent url('../img/fpo-home-cleaning.jpg') no-repeat 50% 50%;
 		background-size: cover;
 	}
