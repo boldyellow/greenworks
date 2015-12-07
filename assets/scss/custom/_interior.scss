@@ -136,17 +136,17 @@
 	color: $primary-color;
 }
 
-.offerings .column  { 
+.services .column  { 
 	padding: 1.5rem; 
 	margin-bottom: 2rem;
 	min-height: 100px; 
 }
 
-.offerings a {
+.services a {
 	text-decoration: none;
 }
 
-.offerings a span {
+.services a span {
 	font-size: 2.5rem; 
 	line-height: 1.1;  
 	letter-spacing: -.10rem;
@@ -157,24 +157,38 @@
 	color: #000;
 }
 
-.offerings a img  { 
+.services a img  { 
 	display: none; 
 }
 
 @media (#{$bp-larger-than-phablet}) {
 	
-	.offerings .column  { 
-		min-height: 400px; 
+	.services .column  { 
+		min-height: 23em; 
 	}
 	
-	.offerings a img  { 
+	.services a img  { 
 		display: block; 
 	}
 	
-	.offerings a span  { 
+	.services a span  { 
 		font-size: 2rem; 
 	}
 	
 }	
 
+@media (#{$bp-larger-than-tablet}) {
+	
+	.services .column  { 
+		min-height: 24em; 
+	}
+	
+}
 
+@media (#{$bp-larger-than-tablet-hd}) {
+	
+	.services .column  { 
+		min-height: 25em; 
+	}
+	
+}
