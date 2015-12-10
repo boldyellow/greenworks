@@ -30,12 +30,13 @@ header {
 	font-size: 1.5rem;
 	text-decoration: none;
 	min-height: 4rem;
-	 margin: 0 0.5rem 0 2rem;
+	margin: 0 0 0 1rem;
 }
 
 @media (#{$bp-larger-than-phablet}) {
 	
 	.connect-bar a {
+		margin: 0 0.5rem 0 2rem;
 		font-size: 1.75rem;
 	}
 	
@@ -56,20 +57,16 @@ header {
 	margin-right: 0.5rem;
 }
 
-.connect-bar a .facebook {
-	display: none;
-}
-
+.connect-bar a .facebook,
+.connect-bar a .twitter,
 .connect-bar a .linkedin {
 	display: none;
 }
 
 @media (#{$bp-larger-than-phablet}) {
 	
-	.connect-bar a .facebook {
-		display: inline-block;
-	}
-	
+	.connect-bar a .facebook,
+	.connect-bar a .twitter,
 	.connect-bar a .linkedin {
 		display: inline-block;
 	}

@@ -66,18 +66,20 @@
 		margin-bottom: 0;
 	}
 }
-
+	
 .featured-link .overlay-tint h3 {
-	font-size: 2.25rem; 
+	font-size: 2rem; 
+	line-height: 1.1;
 	font-weight: $font-bold;
 	text-align: center;
 	margin: 0 3rem;
+	-ms-flex: 0 0 auto;
 }
 
 @media (#{$bp-larger-than-phablet}) {
-		
+	
 	.featured-link .overlay-tint h3 { 
-		font-size: 2rem; 
+		font-size: 1.75rem; 
 		letter-spacing: -0.05rem;
 		margin: 0 1rem;
 		text-shadow: 2px 2px 5px #000000;
@@ -87,7 +89,7 @@
 @media (#{$bp-larger-than-tablet}) {
 		
 	.featured-link .overlay-tint h3 { 
-		font-size: 2.5rem; 
+		font-size: 2.25rem; 
 		margin: 0 2rem;
 	}
 }
@@ -95,24 +97,29 @@
 @media (#{$bp-larger-than-tablet-hd}) {
 		
 	.featured-link .overlay-tint h3 { 
-		font-size: 3rem; 
+		font-size: 2.5rem; 
 		margin: 0 3rem;
 	}
 }
 
+.overlay-tint {
+	background-color: transparent;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 600px;
+	box-sizing: border-box;
+}
+	
 @media (#{$bp-larger-than-phablet}) {
 	
 	.overlay-tint {
 		background-color: rgba(40, 40, 40, 0.5);
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
 		&:hover {
 			background-color: rgba(0, 0, 0, 0);
 		}
