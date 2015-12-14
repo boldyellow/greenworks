@@ -732,8 +732,10 @@ header {
 .connect-bar {
   width: 100%;
   box-sizing: border-box;
-  background-color: #0fb500;
-  text-align: center; }
+  background-color: #0fb500; }
+
+.connect-bar .social {
+  text-align: right; }
 
 .connect-bar a {
   display: -webkit-inline-box;
@@ -745,10 +747,6 @@ header {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -762,7 +760,7 @@ header {
 
 @media (min-width: 600px) {
   .connect-bar a {
-    margin: 0 0.5rem 0 2rem;
+    margin: 0 0 0 2rem;
     font-size: 1.75rem; }
 
   .connect-bar a:hover {
@@ -770,22 +768,14 @@ header {
 .connect-bar a:first-child {
   margin-left: 0; }
 
+.connect-bar a:first-child .icon {
+  margin-right: 0.5rem; }
+
 .connect-bar a .icon {
   display: inline-block;
   height: 2.5rem;
-  width: 2.5rem;
-  margin-right: 0.5rem; }
+  width: 2.5rem; }
 
-.connect-bar a .facebook,
-.connect-bar a .twitter,
-.connect-bar a .linkedin {
-  display: none; }
-
-@media (min-width: 600px) {
-  .connect-bar a .facebook,
-  .connect-bar a .twitter,
-  .connect-bar a .linkedin {
-    display: inline-block; } }
 .nav-outer-wrap {
   position: relative;
   width: 100%;
@@ -1157,7 +1147,8 @@ nav [type="checkbox"] {
     background-size: cover; } }
 .overview {
   text-align: center;
-  min-height: 15rem; }
+  min-height: 15rem;
+  padding-bottom: 0.5rem; }
 
 .interior h6 {
   padding-bottom: 0.5rem;

@@ -17,13 +17,16 @@ header {
     width: 100%;
  	box-sizing: border-box;
 	background-color: $primary-color;
-	text-align: center;
+}
+
+
+.connect-bar .social {
+	text-align: right;
 }
 
 .connect-bar a {
 	display: inline-flex;
 	flex-direction: row;
-	justify-content: center;
 	align-items: center;
 	color: #fff;
 	font-weight: $font-bold;
@@ -36,7 +39,7 @@ header {
 @media (#{$bp-larger-than-phablet}) {
 	
 	.connect-bar a {
-		margin: 0 0.5rem 0 2rem;
+		margin: 0 0 0 2rem;
 		font-size: 1.75rem;
 	}
 	
@@ -50,27 +53,14 @@ header {
 	 margin-left: 0;
 }
 
+.connect-bar a:first-child .icon {
+	margin-right: 0.5rem;
+}
+
 .connect-bar a .icon {
 	display: inline-block;
 	height: 2.5rem;
 	width: 2.5rem;
-	margin-right: 0.5rem;
-}
-
-.connect-bar a .facebook,
-.connect-bar a .twitter,
-.connect-bar a .linkedin {
-	display: none;
-}
-
-@media (#{$bp-larger-than-phablet}) {
-	
-	.connect-bar a .facebook,
-	.connect-bar a .twitter,
-	.connect-bar a .linkedin {
-		display: inline-block;
-	}
-
 }
 
 .nav-outer-wrap {
