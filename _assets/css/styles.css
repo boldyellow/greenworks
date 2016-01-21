@@ -1226,10 +1226,10 @@ nav [type="checkbox"] {
 
 @media (min-width: 400px) {
   .sidebar .headshot {
-    width: 40%; } }
+    width: auto; } }
 @media (min-width: 900px) {
   .sidebar .headshot {
-    width: 50%; } }
+    width: auto; } }
 .type-color {
   color: #0fb500; }
 
