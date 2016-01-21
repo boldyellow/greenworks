@@ -1020,7 +1020,7 @@ nav [type="checkbox"] {
   position: absolute; }
 
 .featured {
-  background-color: #ffd93f;
+  background-color: #E0E0B8;
   text-align: center; }
 
 @media (min-width: 600px) {
@@ -1195,7 +1195,7 @@ nav [type="checkbox"] {
   .interior .offset-by-one.columns {
     margin-left: 8.6666666667%; } }
 .shaded {
-  background-color: #ffd93f; }
+  background-color: #E0E0B8; }
 
 .sidebar.shaded {
   padding: 1.5rem;

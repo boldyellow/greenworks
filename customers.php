@@ -94,6 +94,7 @@
 								<li>Jefferson Millwork &amp; Design, Inc.</li>
 								<li>JR's Carpets and Floors</li>
 								<li>Matos Builders LLC</li>
+								<li>MCN Build</li>
 							</ul>
 														
 						</div>	
@@ -101,7 +102,6 @@
 						<div class="one-half column">
 							
 							<ul class="u-list-bottom-0">
-								<li>MCN Build</li>
 								<li>Michilli</li>
 								<li>National Industries</li>
 								<li>Northstar</li>

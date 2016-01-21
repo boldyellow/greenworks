@@ -1,7 +1,7 @@
 <?php
 	$yourEmail = "trdouglas@gmail.com"; // the email address you wish to receive these mails through
 	$yourWebsite = "Green JobWorks"; // the name of your website
-	$thanksPage = 'http://boldyellow.net/test/thanks.php'; // URL to 'thanks for sending mail' page; leave empty to keep message on the same page 
+	$thanksPage = 'http://green.boldyellow.net/thanks.php'; // URL to 'thanks for sending mail' page; leave empty to keep message on the same page 
 	$maxPoints = 4; // max points a person can hit before it refuses to submit - recommend 4
 	$requiredFields = "name,email,reason,comments"; // names of the fields you'd like to be required as a minimum, separate each field with a comma
 	
@@ -71,6 +71,7 @@
 		if (empty($_POST["email"])) { $emailError = "Email required"; }
 		if (!empty($_POST['email']) && !preg_match('/^([a-z0-9])(([-a-z0-9._])*([a-z0-9]))*\@([a-z0-9])(([a-z0-9-])*([a-z0-9]))+' . '(\.([a-z0-9])([-a-z0-9_-])?([a-z0-9])+)+$/i', strtolower($_POST['email'])))
 			$emailInvalid = "Not a valid e-mail";
+		if (empty($_POST["phone"])) { $phoneError = "Phone required"; }
 		if (empty($_POST["reason"])) { $reasonError = "Reason required"; }
 		if (empty($_POST["comments"])) { $commentsError = "Message required"; }
 		
@@ -216,17 +217,22 @@
 						
 						<div class="row">
 										
-							<div class="four columns">
+							<div class="three columns">
 								<label for="name"><?php if ($nameError) {echo "<span class='error'>" . $nameError . "</span>"; } else { echo "Name"; } ?></label>
 								<input class="u-full-width" type="text" name="name" id="name" placeholder="Your Name" value="<?php get_data("name"); ?>" />
 							</div>
 							
-							<div class="four columns">
+							<div class="three columns">
 								<label for="email"><?php if ($emailError) { echo "<span class='error'>" . $emailError . "</span>"; } elseif ($emailInvalid) { echo "<span class='error'>" . $emailInvalid . "</span>"; } else { echo "Email Address"; } ?></label>
 								<input class="u-full-width" type="text" name="email" id="email" placeholder="name@email.com" value="<?php get_data("email"); ?>" />
 							</div>
 							
-							<div class="four columns">
+							<div class="three columns">
+								<label for="phone"><?php if ($phoneError) {echo "<span class='error'>" . $phoneError . "</span>"; } else { echo "Phone"; } ?></label>
+								<input class="u-full-width" type="text" name="phone" id="phone" placeholder="Phone Number" value="<?php get_data("phone"); ?>" />
+							</div>
+							
+							<div class="three columns">
 								<label for="reason"><?php if ($reasonError) {echo "<span class='error'>" . $reasonError . "</span>"; } else { echo "Reason for Contact"; } ?></label>
 								<select class="u-full-width" name="reason" id="reason">
 									<option value="" selected style="display:none;">Please Select</option>
