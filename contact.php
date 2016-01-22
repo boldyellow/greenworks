@@ -195,7 +195,7 @@
 				
 					<h1>Hire Us or Apply for&nbsp;Work</h1>
 					
-					<p><b>Call <span class="type-color">410-864-6194</span> or complete this form</b></p>
+					<p><b>Call <span class="type-color">410-864-6194</span> or complete this form</b>&emsp;<small>(All fields are required)</small></p>
 					
 					<div style="display:none;">				
 
@@ -216,40 +216,81 @@
 						</noscript>
 						
 						<div class="row">
-										
-							<div class="three columns">
-								<label for="name"><?php if ($nameError) {echo "<span class='error'>" . $nameError . "</span>"; } else { echo "Name"; } ?></label>
-								<input class="u-full-width" type="text" name="name" id="name" placeholder="Your Name" value="<?php get_data("name"); ?>" />
-							</div>
 							
-							<div class="three columns">
-								<label for="email"><?php if ($emailError) { echo "<span class='error'>" . $emailError . "</span>"; } elseif ($emailInvalid) { echo "<span class='error'>" . $emailInvalid . "</span>"; } else { echo "Email Address"; } ?></label>
-								<input class="u-full-width" type="text" name="email" id="email" placeholder="name@email.com" value="<?php get_data("email"); ?>" />
-							</div>
-							
-							<div class="three columns">
-								<label for="phone"><?php if ($phoneError) {echo "<span class='error'>" . $phoneError . "</span>"; } else { echo "Phone"; } ?></label>
-								<input class="u-full-width" type="text" name="phone" id="phone" placeholder="Phone Number" value="<?php get_data("phone"); ?>" />
-							</div>
-							
-							<div class="three columns">
+							<div class="five columns">
 								<label for="reason"><?php if ($reasonError) {echo "<span class='error'>" . $reasonError . "</span>"; } else { echo "Reason for Contact"; } ?></label>
 								<select class="u-full-width" name="reason" id="reason">
 									<option value="" selected style="display:none;">Please Select</option>
 									
 									<option <?php if ($_POST['reason'] == 'Tell me about your services') { ?>selected="true" <?php }; ?>value="Tell me about your services">Tell me about your services</option>
 
-									<option <?php if ($_POST['reason'] == 'I want to apply for a job') { ?>selected="true" <?php }; ?>value="I want to apply for a job">I want to apply for a job</option>
+									<option <?php if ($_POST['reason'] == 'I want to apply for a job') { ?>selected="true" <?php }; ?>value="I want to apply for a job">I want to apply for a job*</option>
 								</select>
+							</div>
+							
+							<div class="seven columns attention">
+								<p>Job Applicants: <a href="#required">Read our Requirements</a></p>
+							</div>
+						</div>
+						
+						
+						<div class="row">
+										
+							<div class="four columns">
+								<label for="name"><?php if ($nameError) {echo "<span class='error'>" . $nameError . "</span>"; } else { echo "Name"; } ?></label>
+								<input class="u-full-width" type="text" name="name" id="name" placeholder="Your Name" value="<?php get_data("name"); ?>" />
+							</div>
+							
+							<div class="four columns">
+								<label for="email"><?php if ($emailError) { echo "<span class='error'>" . $emailError . "</span>"; } elseif ($emailInvalid) { echo "<span class='error'>" . $emailInvalid . "</span>"; } else { echo "Email Address"; } ?></label>
+								<input class="u-full-width" type="text" name="email" id="email" placeholder="name@email.com" value="<?php get_data("email"); ?>" />
+							</div>
+							
+							<div class="four columns">
+								<label for="phone"><?php if ($phoneError) {echo "<span class='error'>" . $phoneError . "</span>"; } else { echo "Phone"; } ?></label>
+								<input class="u-full-width" type="text" name="phone" id="phone" placeholder="Phone Number" value="<?php get_data("phone"); ?>" />
 							</div>
 							
 						</div>
 						
-						<label for="comments"><?php if ($commentsError) {echo "<span class='error'>" . $commentsError . "</span>"; } else { echo "Message"; } ?></label>
-						<textarea class="u-full-width" placeholder="Hello..." name="comments" id="comments"><?php get_data("comments"); ?></textarea>
+						<div class="row">
+							
+							<div class="twelve columns">
 						
-						<input class="button-primary u-pull-right" type="submit" name="submit" id="submit" value="Submit" <?php get_data("comments"); ?> >
+								<label for="comments"><?php if ($commentsError) {echo "<span class='error'>" . $commentsError . "</span>"; } else { echo "Message"; } ?></label>
+								<textarea class="u-full-width" placeholder="" name="comments" id="comments"><?php get_data("comments"); ?></textarea>
+							</div>
+							
+						</div>
 						
+							
+						<div class="row">
+							
+							<div class="twelve columns">
+						
+								<input class="button-primary u-pull-right" type="submit" name="submit" id="submit" value="Submit" <?php get_data("comments"); ?> >
+								
+							</div>
+							
+						</div>
+
+						<div id="required" class="row">
+							
+							<div class="twelve columns fine-print">
+								
+								<hr>
+								
+								<p>*<b>Application Requirements</b></p>
+								<ul>
+									<li>Tell us about your construction experience, your availability, your work ethic and anything else we should know. </li>
+									<li>What job(s) are you applying for? Please indicate: asbestos abatement, lead abatement, mold remediation, demolition, post-construction cleaning, janitorial maintenance services, carpentry, etc. </li>
+									<li>When can you start?</li>
+									<li>Note: You must be over 18 and authorized to work in the United States.</li>
+								</ul>									
+							</div>
+							
+						</div>
+													
 					</form>		
 
 				</div>

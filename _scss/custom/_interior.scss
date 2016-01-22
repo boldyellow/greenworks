@@ -192,3 +192,28 @@
 	}
 	
 }
+
+.attention p {
+	font-size: 1.75rem;
+	padding-top: 0.5rem;
+	margin-bottom: 1.5rem;
+}
+
+@media (#{$bp-larger-than-phablet}) {
+	
+	.attention p {
+		padding-top: 3rem;
+		margin-bottom: 3rem;
+	}
+}	
+
+.fine-print p,
+.fine-print li {
+	font-size: 1.5rem;
+	margin-bottom: 0;
+}
+
+.fine-print hr {
+	margin-top: 1.5rem;
+	margin-bottom: 1.75rem;
+}

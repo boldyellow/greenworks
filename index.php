@@ -53,17 +53,17 @@
 			
 			<div class="row">
 				
-				<a href="staffing.html" class="featured-link staffing">
+				<a href="staffing.php" class="featured-link staffing">
 					<div class="overlay-tint">
 						<h3>Construction Staffing</h3>
 					</div>
 				</a>
-				<a href="offsite.html" class="featured-link construction">
+				<a href="related.php" class="featured-link construction">
 					<div class="overlay-tint">
 						<h3>Demolition &amp; Abatement</h3>
 					</div>
 				</a>
-				<a href="offsite.html" class="featured-link cleaning">
+				<a href="related.php" class="featured-link cleaning">
 					<div class="overlay-tint text-center">
 						<h3>Commercial Cleaning: Post Construction, Janitorial Maintenance Services</h3>
 					</div>

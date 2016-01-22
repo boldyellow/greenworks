@@ -52,7 +52,7 @@
 					
 					<ul>
 						<li><a <?php if ($current_page == 'about.php') { echo 'class="active"';} ?> href="about.php">About Us</a></li>
-						<li><a <?php if ($current_page == 'services.php' || $current_page == 'offsite.php') { echo 'class="active"';} ?> href="services.php">Services</a></li>
+						<li><a <?php if ($current_page == 'services.php' || $current_page == 'staffing.php' || $current_page == 'related.php') { echo 'class="active"';} ?> href="services.php">Services</a></li>
 						<li><a <?php if ($current_page == 'customers.php') { echo 'class="active"';} ?> href="customers.php">Customers</a></li>
 						<li><a <?php if ($current_page == 'contact.php' || $current_page == 'thanks.php') { echo 'class="active"';} ?> href="contact.php">Contact</a></li>
 						<li><a class="active" href="#">EN</a><a href="#">ES</a></li>

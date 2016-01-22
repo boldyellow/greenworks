@@ -625,7 +625,7 @@ textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  min-height: 12rem;
+  min-height: 16rem;
   padding-top: 6px;
   padding-bottom: 6px; }
 
@@ -1135,15 +1135,15 @@ nav [type="checkbox"] {
       text-shadow: none; } }
 @media (min-width: 600px) {
   .featured-link.staffing {
-    background: transparent url("../img/fpo-home-staffing.jpg") no-repeat 50% 50%;
+    background: transparent url("../img/fpo-staffing.jpg") no-repeat 50% 50%;
     background-size: cover; } }
 @media (min-width: 600px) {
   .featured-link.construction {
-    background: transparent url("../img/fpo-home-demo.jpg") no-repeat 50% 50%;
+    background: transparent url("../img/fpo-abatement.jpg") no-repeat 50% 50%;
     background-size: cover; } }
 @media (min-width: 600px) {
   .featured-link.cleaning {
-    background: transparent url("../img/fpo-home-cleaning.jpg") no-repeat 50% 50%;
+    background: transparent url("../img/fpo-janitorial.jpg") no-repeat 50% 50%;
     background-size: cover; } }
 .overview {
   text-align: center;
@@ -1273,6 +1273,24 @@ nav [type="checkbox"] {
 @media (min-width: 900px) {
   .services .column {
     min-height: 25em; } }
+.attention p {
+  font-size: 1.75rem;
+  padding-top: 0.5rem;
+  margin-bottom: 1.5rem; }
+
+@media (min-width: 600px) {
+  .attention p {
+    padding-top: 3rem;
+    margin-bottom: 3rem; } }
+.fine-print p,
+.fine-print li {
+  font-size: 1.5rem;
+  margin-bottom: 0; }
+
+.fine-print hr {
+  margin-top: 1.5rem;
+  margin-bottom: 1.75rem; }
+
 footer {
   background-color: #eee; }
 

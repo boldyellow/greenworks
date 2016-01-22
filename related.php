@@ -89,7 +89,7 @@
 					
 					<h3>Commercial Cleaning</h3>
 					
-					<h5><strong>Post Construction &amp; Janitorial Maintenance Services</strong></h5>
+					<h5><strong>Commercial Cleaning: Post Construction, Janitorial Maintenance Services</strong></h5>
 					
 					<p>Our teams will leave your facility looking beautiful and brand new. Our workers often are cross-trained in post-construction cleaning, mold remediation and/or asbestos abatement. Our workers are professional, meticulous, reliable and dedicated. For Janitorial Cleaning customers &ndash; our teams leave no surface untouched. They dust and clean every surface, vacuum and mop floors, clean picture frames and sanitize bathrooms.</p>
 					<p class="u-margin-bottom-0">Services provided:</p>

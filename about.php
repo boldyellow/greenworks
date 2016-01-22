@@ -73,7 +73,6 @@
 							<h5>How We Do It:</h5>
 							
 							<ul class="u-list-bottom-0">
-								<li>We provide cost-effective, quality staffing solutions for construction and commercial real estate industries by supplying prescreened, pre-trained staff on a contract basis.</li>
 								<li>We provide leading workforce development organizations a viable pathway to placement for their members.</li>
 								<li>We offer customers a unique partnership, enabling you to invest in building communities through workforce development while meeting your business needs.</li>
 							</ul>
