@@ -77,7 +77,7 @@
 		
 
 		if ($error_msg == NULL && $points <= $maxPoints) {
-			$subject = "Automatic Form Email";
+			$subject = "Website Form Submission";
 			
 
 			$message = "You received this e-mail message through your website: \n\n";
