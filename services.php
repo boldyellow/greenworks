@@ -68,7 +68,7 @@
 						
 						<a href="staffing.php" class="one-third column shaded">
 								    
-							<img class="u-full-width" src="_assets/img/fpo-staffing.jpg" alt="FPO">
+							<img class="u-full-width" src="_assets/img/fpo-staffing-123rf-5825740.jpg" alt="FPO">
 					    
 							<span>Construction Staffing</span>
 							
@@ -78,7 +78,7 @@
 						
 						<a href="related.php" class="one-third column shaded">
 								    
-							<img class="u-full-width" src="_assets/img/fpo-abatement.jpg" alt="FPO">
+							<img class="u-full-width" src="_assets/img/fpo-abatement-adobe-4925322.jpg" alt="FPO">
 					    
 							<span>Demolition &amp; Abatement</span>
 							
@@ -88,7 +88,7 @@
 						
 						<a href="related.php" class="one-third column shaded">
 								    
-							<img class="u-full-width" src="_assets/img/fpo-janitorial.jpg" alt="FPO">
+							<img class="u-full-width" src="_assets/img/fpo-janitorial-adobe-96806018.jpg" alt="FPO">
 					    
 							<span>Commercial Cleaning: Post Construction, Janitorial Maintenance Services</span>
 							

@@ -84,8 +84,7 @@
 								
 						<div class="one-half column u-hide-up-to-phablet">
 								
-							<img class="u-max-full-width" src="_assets/img/fpo-staffing-workers.jpg" alt="Green JobWorks">						
-							
+							<img class="u-max-full-width" src="_assets/img/fpo-staffing-workers-adobe-9944487.jpg" alt="Green JobWorks">						
 						</div>
 						
 					</div>	
