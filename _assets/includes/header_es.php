@@ -12,7 +12,7 @@
 						
 						<a href="contact.php">
 							<span class="icon"><svg id="apply" x="0px" y="0px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve"><path fill="#FFFFFF" d="M15 0C6.7 0 0 6.7 0 15c0 8.3 6.7 15 15 15s15-6.7 15-15C30 6.7 23.3 0 15 0zM15 28.5C7.6 28.5 1.5 22.4 1.5 15 1.5 7.6 7.6 1.5 15 1.5c3.4 0 6.4 1.2 8.8 3.3L13 18.2l-3.9-5.4 -3.2 2.8 6.9 10.2 14-17.5c1.1 2 1.7 4.2 1.7 6.6C28.5 22.4 22.4 28.5 15 28.5z"/></svg></span>
-							Apply <span class="u-hide-up-to-phablet">&nbsp;for Work</span>
+							Aplique<span class="u-hide-up-to-phablet">&nbsp;ahora</span>
 						</a>
 						
 						<div class="social u-pull-right">
@@ -46,16 +46,16 @@
 					<label for="nav"></label>
 					
 					<div class="mobile-language-wrap">
-						<a href="#" class="eng-mobile active">EN</a>
-						<a href="./es/<?php echo $current_page; ?>" class="esp-mobile">ES</a>
+						<a href="../<?php echo $current_page; ?>" class="eng-mobile">EN</a>
+						<a href="#" class="esp-mobile active">ES</a>
 					</div>
 					
 					<ul>
-						<li><a <?php if ($current_page == 'about.php') { echo 'class="active"';} ?> href="about.php">About Us</a></li>
-						<li><a <?php if ($current_page == 'services.php' || $current_page == 'staffing.php' || $current_page == 'related.php') { echo 'class="active"';} ?> href="services.php">Services</a></li>
-						<li><a <?php if ($current_page == 'customers.php') { echo 'class="active"';} ?> href="customers.php">Customers</a></li>
-						<li><a <?php if ($current_page == 'contact.php' || $current_page == 'thanks.php') { echo 'class="active"';} ?> href="contact.php">Contact</a></li>
-						<li><a class="active" href="#">EN</a><a href="./es/<?php echo $current_page; ?>">ES</a></li>
+						<li><a <?php if ($current_page == 'about.php') { echo 'class="active"';} ?> href="about.php">Quienes Somos</a></li>
+						<li><a <?php if ($current_page == 'services.php' || $current_page == 'staffing.php' || $current_page == 'related.php') { echo 'class="active"';} ?> href="services.php">Servicios</a></li>
+						<li><a <?php if ($current_page == 'customers.php') { echo 'class="active"';} ?> href="customers.php">Clientes</a></li>
+						<li><a <?php if ($current_page == 'contact.php' || $current_page == 'thanks.php') { echo 'class="active"';} ?> href="contact.php">Cont&aacute;ctenos</a></li>
+						<li><a href="../<?php echo $current_page; ?>">EN</a><a class="active" href="#">ES</a></li>
 					</ul>
 				
 					<div class="brand">
