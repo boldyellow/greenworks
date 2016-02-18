@@ -74,7 +74,7 @@
 							
 							<ul class="u-list-bottom-0">
 								<li>Proveemos una agencia de empleo efectiva y de alta calidad dentro de la construcci&oacute;n e industrias comerciales a trav&eacute;s de una mano de obra evaluada y pre-entrenada por medio de contrato.</li>
-								<li>WeProveemos una mano de obra desarrollada y organizada en la direcci&oacute;n exacta para alcanzar el &eacute;xito</li>
+								<li>Proveemos una mano de obra desarrollada y organizada en la direcci&oacute;n exacta para alcanzar el &eacute;xito</li>
 								<li>Ofrecemos a nuestros clientes una asociaci&oacute;n &uacute;nica, convenci&eacute;ndole a invertir en construcci&oacute;n en nuestras comunidades a trav&eacute;s del desarrollo de la mano de obra y satisfaciendo las necesidades de su negocio al mismo tiempo.</li>
 							</ul>
 							<p class="working-tag">Trabajando en quipo nos distinguir&aacute;</p>
