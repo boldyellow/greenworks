@@ -1,7 +1,7 @@
 <?php
-	$yourEmail = "trdouglas@gmail.com"; // the email address you wish to receive these mails through
+	$yourEmail = "contactus@greenjobworks.com"; // the email address you wish to receive these mails through
 	$yourWebsite = "Green JobWorks"; // the name of your website
-	$thanksPage = 'http://green.boldyellow.net/thanks.php'; // URL to 'thanks for sending mail' page; leave empty to keep message on the same page 
+	$thanksPage = 'http://www.greenjobworks.com/thanks.php'; // URL to 'thanks for sending mail' page; leave empty to keep message on the same page 
 	$maxPoints = 4; // max points a person can hit before it refuses to submit - recommend 4
 	$requiredFields = "name,email,reason,comments"; // names of the fields you'd like to be required as a minimum, separate each field with a comma
 	
