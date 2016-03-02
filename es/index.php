@@ -7,31 +7,19 @@
 	<meta http-equiv="cache-control" content="max-age=3600">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<!-- <meta name="Robots" content="index,follow"> -->
-	
-	<meta property="og:title" content="Lorem Ipsum">
-	<meta property="og:description" content="Lorem Ipsum">
+	<meta property="og:title" content="Green JobWorks: Find the Workers You Need">
+	<meta property="og:description" content="We provide contract employees for construction and environmental firms. Using our unique, referral-based hiring system, we find the right people with the right skills for your project.">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://www.xyz.com/index.html">
-	<meta property="og:image" content="ogshare.jpg">
+	<meta property="og:url" content="http://greenjobworks.com/es/">
+	<meta property="og:image" content="../_assets/img/og-image.jpg">
+	
+	<meta name="language" content="spanish">
 	
 	<title>Green JobWorks</title>
 	
-	<!-- favicons
-	================================================== -->
-	<!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. --> 
-	<!-- <link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png"> -->
-	
-	<!-- Firefox, Chrome, Safari, IE 11+ and Opera. 192x192 pixels in size. -->
-	<!-- <link rel="icon" href="/path/to/favicon.png"> -->
-	
-	
-	<!-- css
-	================================================== -->
-	<link href="../_assets/css/styles.css" rel="stylesheet">
-
-	<!-- analytics
-	================================================== -->
+	<link rel="icon" type="image/x-icon" href="../favicon.ico" />
+		
+	<link rel="stylesheet" href="../_assets/css/styles.css">
 
 </head>
 

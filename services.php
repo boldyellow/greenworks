@@ -7,35 +7,18 @@
 	<meta http-equiv="cache-control" content="max-age=3600">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<!-- <meta name="Robots" content="index,follow"> -->
-	
-	<meta property="og:title" content="Lorem Ipsum">
-	<meta property="og:description" content="Lorem Ipsum">
+	<meta property="og:title" content="Green JobWorks Services">
+	<meta property="og:description" content="Staffing for construction, demolition, abatement and commercial cleaning for post construction and janitorial maintenance services.">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://www.xyz.com/index.html">
-	<meta property="og:image" content="ogshare.jpg">
+	<meta property="og:url" content="http://greenjobworks.com/services.php">
+	<meta property="og:image" content="./_assets/img/og-image.jpg">
 	
-	<title>Customers | Green JobWorks</title>
+	<title>Services | Green JobWorks</title>
 	
-	<!-- favicons
-	================================================== -->
-	<!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. --> 
-	<link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
 	
-	<!-- Firefox, Chrome, Safari, IE 11+ and Opera. 192x192 pixels in size. -->
-	<!-- <link rel="icon" href="/path/to/favicon.png"> -->
-	
-	<!-- above the fold basic styles
-	================================================== -->
-	<style>
-	</style>
-	
-	<!-- css
-	================================================== -->
 	<link rel="stylesheet" href="_assets/css/styles.css">
 
-	<!-- analytics
-	================================================== -->
 
 </head>
 
@@ -68,7 +51,7 @@
 						
 						<a href="staffing.php" class="one-third column shaded">
 								    
-							<img class="u-full-width" src="_assets/img/fpo-staffing-123rf-5825740.jpg" alt="FPO">
+							<img class="u-full-width" src="_assets/img/staffing.jpg" alt="FPO">
 					    
 							<span>Construction Staffing</span>
 							
@@ -78,7 +61,7 @@
 						
 						<a href="related.php" class="one-third column shaded">
 								    
-							<img class="u-full-width" src="_assets/img/fpo-abatement-adobe-4925322.jpg" alt="FPO">
+							<img class="u-full-width" src="_assets/img/abatement.jpg" alt="FPO">
 					    
 							<span>Demolition &amp; Abatement</span>
 							
@@ -88,7 +71,7 @@
 						
 						<a href="related.php" class="one-third column shaded">
 								    
-							<img class="u-full-width" src="_assets/img/fpo-janitorial-adobe-96806018.jpg" alt="FPO">
+							<img class="u-full-width" src="_assets/img/janitorial.jpg" alt="FPO">
 					    
 							<span>Commercial Cleaning: Post Construction, Janitorial Maintenance Services</span>
 							
